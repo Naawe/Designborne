@@ -6,7 +6,7 @@
 <title>ActorLocationsIterator</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="dc.created" content="2023-10-06">
-<meta name="description" content="declaration: package: edu.monash.fit2099.engine.actors, class: ActorLocationsIterator">
+<meta name="description" content="declaration: package: engine.actors, class: ActorLocationsIterator">
 <meta name="generator" content="javadoc/ClassWriterImpl">
 <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
 <link rel="stylesheet" type="text/css" href="../../../../../script-dir/jquery-ui.min.css" title="Style">
@@ -73,21 +73,21 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">edu.monash.fit2099.engine.actors</a></div>
+<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">engine.actors</a></div>
 <h1 title="Class ActorLocationsIterator" class="title">Class ActorLocationsIterator</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
-<div class="inheritance">edu.monash.fit2099.engine.actors.ActorLocationsIterator</div>
+<div class="inheritance">engine.actors.ActorLocationsIterator</div>
 </div>
 <section class="description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code>java.lang.Iterable&lt;<a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&gt;</code></dd>
+<dd><code>java.lang.Iterable&lt;<a href="Actor.html" title="class in engine.actors">Actor</a>&gt;</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="type-name-label">ActorLocationsIterator</span>
 extends java.lang.Object
-implements java.lang.Iterable&lt;<a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&gt;</pre>
+implements java.lang.Iterable&lt;<a href="Actor.html" title="class in engine.actors">Actor</a>&gt;</pre>
 <div class="block">Represents a bimap of locations and actors. Hence it enforces the one actor
  per location rule. Has a nifty iterator that lets us modify the collection
  while iterating it.</div>
@@ -137,63 +137,63 @@ implements java.lang.Iterable&lt;<a href="Actor.html" title="class in edu.monash
 <tbody>
 <tr class="alt-color" id="i0">
 <td class="col-first"><code>void</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#add(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location)">add</a></span>&#8203;(<a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor,
-<a href="../positions/Location.html" title="class in edu.monash.fit2099.engine.positions">Location</a>&nbsp;location)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#add(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location)">add</a></span>&#8203;(<a href="Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor,
+<a href="../positions/Location.html" title="class in engine.positions">Location</a>&nbsp;location)</code></th>
 <td class="col-last">
 <div class="block">Add a new Actor at the given Location.</div>
 </td>
 </tr>
 <tr class="row-color" id="i1">
 <td class="col-first"><code>boolean</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#contains(edu.monash.fit2099.engine.actors.Actor)">contains</a></span>&#8203;(<a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#contains(edu.monash.fit2099.engine.actors.Actor)">contains</a></span>&#8203;(<a href="Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor)</code></th>
 <td class="col-last">
 <div class="block">Returns true if actor exists in the system.</div>
 </td>
 </tr>
 <tr class="alt-color" id="i2">
-<td class="col-first"><code><a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a></code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#getActorAt(edu.monash.fit2099.engine.positions.Location)">getActorAt</a></span>&#8203;(<a href="../positions/Location.html" title="class in edu.monash.fit2099.engine.positions">Location</a>&nbsp;location)</code></th>
+<td class="col-first"><code><a href="Actor.html" title="class in engine.actors">Actor</a></code></td>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#getActorAt(edu.monash.fit2099.engine.positions.Location)">getActorAt</a></span>&#8203;(<a href="../positions/Location.html" title="class in engine.positions">Location</a>&nbsp;location)</code></th>
 <td class="col-last">
 <div class="block">Returns a reference to the Actor at the given location, if there is one.</div>
 </td>
 </tr>
 <tr class="row-color" id="i3">
 <td class="col-first"><code>boolean</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#isAnActorAt(edu.monash.fit2099.engine.positions.Location)">isAnActorAt</a></span>&#8203;(<a href="../positions/Location.html" title="class in edu.monash.fit2099.engine.positions">Location</a>&nbsp;location)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#isAnActorAt(edu.monash.fit2099.engine.positions.Location)">isAnActorAt</a></span>&#8203;(<a href="../positions/Location.html" title="class in engine.positions">Location</a>&nbsp;location)</code></th>
 <td class="col-last">
 <div class="block">Returns true if an Actor is at the given Location.</div>
 </td>
 </tr>
 <tr class="alt-color" id="i4">
-<td class="col-first"><code>java.util.Iterator&lt;<a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&gt;</code></td>
+<td class="col-first"><code>java.util.Iterator&lt;<a href="Actor.html" title="class in engine.actors">Actor</a>&gt;</code></td>
 <th class="col-second" scope="row"><code><span class="member-name-link"><a href="#iterator()">iterator</a></span>()</code></th>
 <td class="col-last">&nbsp;</td>
 </tr>
 <tr class="row-color" id="i5">
-<td class="col-first"><code><a href="../positions/Location.html" title="class in edu.monash.fit2099.engine.positions">Location</a></code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#locationOf(edu.monash.fit2099.engine.actors.Actor)">locationOf</a></span>&#8203;(<a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor)</code></th>
+<td class="col-first"><code><a href="../positions/Location.html" title="class in engine.positions">Location</a></code></td>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#locationOf(edu.monash.fit2099.engine.actors.Actor)">locationOf</a></span>&#8203;(<a href="Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor)</code></th>
 <td class="col-last">
 <div class="block">Returns a reference to the Location containing the given Actor.</div>
 </td>
 </tr>
 <tr class="alt-color" id="i6">
 <td class="col-first"><code>void</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#move(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location)">move</a></span>&#8203;(<a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor,
-<a href="../positions/Location.html" title="class in edu.monash.fit2099.engine.positions">Location</a>&nbsp;newLocation)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#move(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location)">move</a></span>&#8203;(<a href="Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor,
+<a href="../positions/Location.html" title="class in engine.positions">Location</a>&nbsp;newLocation)</code></th>
 <td class="col-last">
 <div class="block">Moves an existing Actor to a new Location.</div>
 </td>
 </tr>
 <tr class="row-color" id="i7">
 <td class="col-first"><code>void</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#remove(edu.monash.fit2099.engine.actors.Actor)">remove</a></span>&#8203;(<a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#remove(edu.monash.fit2099.engine.actors.Actor)">remove</a></span>&#8203;(<a href="Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor)</code></th>
 <td class="col-last">
 <div class="block">Remove an Actor from the system.</div>
 </td>
 </tr>
 <tr class="alt-color" id="i8">
 <td class="col-first"><code>void</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#setPlayer(edu.monash.fit2099.engine.actors.Actor)">setPlayer</a></span>&#8203;(<a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;player)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#setPlayer(edu.monash.fit2099.engine.actors.Actor)">setPlayer</a></span>&#8203;(<a href="Actor.html" title="class in engine.actors">Actor</a>&nbsp;player)</code></th>
 <td class="col-last">
 <div class="block">Adds an Actor and identifies it as the player.</div>
 </td>
@@ -237,7 +237,7 @@ implements java.lang.Iterable&lt;<a href="Actor.html" title="class in edu.monash
 <li>
 <section class="detail" id="setPlayer(edu.monash.fit2099.engine.actors.Actor)">
 <h3>setPlayer</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">setPlayer</span>&#8203;(<span class="parameters"><a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;player)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">setPlayer</span>&#8203;(<span class="parameters"><a href="Actor.html" title="class in engine.actors">Actor</a>&nbsp;player)</span></div>
 <div class="block">Adds an Actor and identifies it as the player. 
  The player always gets to go first in any turn.</div>
 <dl class="notes">
@@ -249,8 +249,8 @@ implements java.lang.Iterable&lt;<a href="Actor.html" title="class in edu.monash
 <li>
 <section class="detail" id="add(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location)">
 <h3>add</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">add</span>&#8203;(<span class="parameters"><a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor,
-<a href="../positions/Location.html" title="class in edu.monash.fit2099.engine.positions">Location</a>&nbsp;location)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">add</span>&#8203;(<span class="parameters"><a href="Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor,
+<a href="../positions/Location.html" title="class in engine.positions">Location</a>&nbsp;location)</span></div>
 <div class="block">Add a new Actor at the given Location.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -264,7 +264,7 @@ implements java.lang.Iterable&lt;<a href="Actor.html" title="class in edu.monash
 <li>
 <section class="detail" id="remove(edu.monash.fit2099.engine.actors.Actor)">
 <h3>remove</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">remove</span>&#8203;(<span class="parameters"><a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">remove</span>&#8203;(<span class="parameters"><a href="Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor)</span></div>
 <div class="block">Remove an Actor from the system.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -275,8 +275,8 @@ implements java.lang.Iterable&lt;<a href="Actor.html" title="class in edu.monash
 <li>
 <section class="detail" id="move(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location)">
 <h3>move</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">move</span>&#8203;(<span class="parameters"><a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor,
-<a href="../positions/Location.html" title="class in edu.monash.fit2099.engine.positions">Location</a>&nbsp;newLocation)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">move</span>&#8203;(<span class="parameters"><a href="Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor,
+<a href="../positions/Location.html" title="class in engine.positions">Location</a>&nbsp;newLocation)</span></div>
 <div class="block">Moves an existing Actor to a new Location.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -290,7 +290,7 @@ implements java.lang.Iterable&lt;<a href="Actor.html" title="class in edu.monash
 <li>
 <section class="detail" id="contains(edu.monash.fit2099.engine.actors.Actor)">
 <h3>contains</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="member-name">contains</span>&#8203;(<span class="parameters"><a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="member-name">contains</span>&#8203;(<span class="parameters"><a href="Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor)</span></div>
 <div class="block">Returns true if actor exists in the system.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -303,7 +303,7 @@ implements java.lang.Iterable&lt;<a href="Actor.html" title="class in edu.monash
 <li>
 <section class="detail" id="isAnActorAt(edu.monash.fit2099.engine.positions.Location)">
 <h3>isAnActorAt</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="member-name">isAnActorAt</span>&#8203;(<span class="parameters"><a href="../positions/Location.html" title="class in edu.monash.fit2099.engine.positions">Location</a>&nbsp;location)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="member-name">isAnActorAt</span>&#8203;(<span class="parameters"><a href="../positions/Location.html" title="class in engine.positions">Location</a>&nbsp;location)</span></div>
 <div class="block">Returns true if an Actor is at the given Location.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -316,7 +316,7 @@ implements java.lang.Iterable&lt;<a href="Actor.html" title="class in edu.monash
 <li>
 <section class="detail" id="getActorAt(edu.monash.fit2099.engine.positions.Location)">
 <h3>getActorAt</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a></span>&nbsp;<span class="member-name">getActorAt</span>&#8203;(<span class="parameters"><a href="../positions/Location.html" title="class in edu.monash.fit2099.engine.positions">Location</a>&nbsp;location)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Actor.html" title="class in engine.actors">Actor</a></span>&nbsp;<span class="member-name">getActorAt</span>&#8203;(<span class="parameters"><a href="../positions/Location.html" title="class in engine.positions">Location</a>&nbsp;location)</span></div>
 <div class="block">Returns a reference to the Actor at the given location, if there is one.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -329,7 +329,7 @@ implements java.lang.Iterable&lt;<a href="Actor.html" title="class in edu.monash
 <li>
 <section class="detail" id="locationOf(edu.monash.fit2099.engine.actors.Actor)">
 <h3>locationOf</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../positions/Location.html" title="class in edu.monash.fit2099.engine.positions">Location</a></span>&nbsp;<span class="member-name">locationOf</span>&#8203;(<span class="parameters"><a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../positions/Location.html" title="class in engine.positions">Location</a></span>&nbsp;<span class="member-name">locationOf</span>&#8203;(<span class="parameters"><a href="Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor)</span></div>
 <div class="block">Returns a reference to the Location containing the given Actor.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -342,10 +342,10 @@ implements java.lang.Iterable&lt;<a href="Actor.html" title="class in edu.monash
 <li>
 <section class="detail" id="iterator()">
 <h3>iterator</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.util.Iterator&lt;<a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&gt;</span>&nbsp;<span class="member-name">iterator</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.util.Iterator&lt;<a href="Actor.html" title="class in engine.actors">Actor</a>&gt;</span>&nbsp;<span class="member-name">iterator</span>()</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code>iterator</code>&nbsp;in interface&nbsp;<code>java.lang.Iterable&lt;<a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&gt;</code></dd>
+<dd><code>iterator</code>&nbsp;in interface&nbsp;<code>java.lang.Iterable&lt;<a href="Actor.html" title="class in engine.actors">Actor</a>&gt;</code></dd>
 <dt>See Also:</dt>
 <dd><code>Iterable.iterator()</code></dd>
 </dl>

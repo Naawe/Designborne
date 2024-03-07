@@ -1,9 +1,9 @@
 package game.actors;
 
-import edu.monash.fit2099.engine.actions.ActionList;
-import edu.monash.fit2099.engine.actors.Actor;
-import edu.monash.fit2099.engine.items.Item;
-import edu.monash.fit2099.engine.positions.GameMap;
+import engine.actions.ActionList;
+import engine.actors.Actor;
+import engine.items.Item;
+import engine.positions.GameMap;
 import game.actions.Conversation;
 import game.actions.ConversationAction;
 import game.actions.Monologue;

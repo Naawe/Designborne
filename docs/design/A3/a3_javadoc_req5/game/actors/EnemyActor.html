@@ -72,8 +72,8 @@ loadScripts(document, 'script');</script>
 <h1 title="Class EnemyActor" class="title">Class EnemyActor</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
-<div class="inheritance">edu.monash.fit2099.engine.GameEntity
-<div class="inheritance">edu.monash.fit2099.engine.actors.Actor
+<div class="inheritance">engine.GameEntity
+<div class="inheritance">engine.actors.Actor
 <div class="inheritance">game.actors.EnemyActor</div>
 </div>
 </div>
@@ -81,7 +81,7 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code>edu.monash.fit2099.engine.displays.Printable</code>, <code><a href="../notification/DeathSubcriber.html" title="interface in game.notification">DeathSubcriber</a></code></dd>
+<dd><code>engine.displays.Printable</code>, <code><a href="../notification/DeathSubcriber.html" title="interface in game.notification">DeathSubcriber</a></code></dd>
 </dl>
 <dl class="notes">
 <dt>Direct Known Subclasses:</dt>
@@ -89,7 +89,7 @@ loadScripts(document, 'script');</script>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">EnemyActor</span>
-<span class="extends-implements">extends edu.monash.fit2099.engine.actors.Actor
+<span class="extends-implements">extends engine.actors.Actor
 implements <a href="../notification/DeathSubcriber.html" title="interface in game.notification">DeathSubcriber</a></span></div>
 <div class="block">abstract class that enemy actors inherit from
  Created by:</div>
@@ -118,7 +118,7 @@ implements <a href="../notification/DeathSubcriber.html" title="interface in gam
 <div class="col-last even-row-color">
 <div class="block">The priority of attack behaviour</div>
 </div>
-<div class="col-first odd-row-color"><code>protected <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>,<wbr>edu.monash.fit2099.engine.actors.Behaviour&gt;</code></div>
+<div class="col-first odd-row-color"><code>protected <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>,<wbr>engine.actors.Behaviour&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#behaviours" class="member-name-link">behaviours</a></code></div>
 <div class="col-last odd-row-color">
 <div class="block">A map list of behaviours and their corresponding priorities</div>
@@ -138,7 +138,7 @@ implements <a href="../notification/DeathSubcriber.html" title="interface in gam
 <div class="col-last even-row-color">
 <div class="block">The amount of Runes (currency) an actor or item has</div>
 </div>
-<div class="col-first odd-row-color"><code>protected edu.monash.fit2099.engine.actors.Actor</code></div>
+<div class="col-first odd-row-color"><code>protected engine.actors.Actor</code></div>
 <div class="col-second odd-row-color"><code><a href="#target" class="member-name-link">target</a></code></div>
 <div class="col-last odd-row-color">
 <div class="block">The actor who is the target of the enemy actor</div>
@@ -150,10 +150,10 @@ implements <a href="../notification/DeathSubcriber.html" title="interface in gam
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="fields-inherited-from-class-edu.monash.fit2099.engine.actors.Actor">Fields inherited from class&nbsp;edu.monash.fit2099.engine.actors.Actor</h3>
+<h3 id="fields-inherited-from-class-edu.monash.fit2099.engine.actors.Actor">Fields inherited from class&nbsp;engine.actors.Actor</h3>
 <code>name</code></div>
 <div class="inherited-list">
-<h3 id="fields-inherited-from-class-edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="fields-inherited-from-class-edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;engine.GameEntity</h3>
 <code>capabilitySet</code></div>
 </section>
 </li>
@@ -188,20 +188,20 @@ implements <a href="../notification/DeathSubcriber.html" title="interface in gam
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addBehavior(int,edu.monash.fit2099.engine.actors.Behaviour)" class="member-name-link">addBehavior</a><wbr>(int&nbsp;priority,
- edu.monash.fit2099.engine.actors.Behaviour&nbsp;behaviour)</code></div>
+ engine.actors.Behaviour&nbsp;behaviour)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gives the enemy actor the ability to have multiple behaviours</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>edu.monash.fit2099.engine.actions.ActionList</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor,java.lang.String,edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">allowableActions</a><wbr>(edu.monash.fit2099.engine.actors.Actor&nbsp;otherActor,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>engine.actions.ActionList</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor,java.lang.String,edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">allowableActions</a><wbr>(engine.actors.Actor&nbsp;otherActor,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;direction,
- edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></div>
+ engine.positions.GameMap&nbsp;map)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">checks for weapons in the other actors inventory and if there are any weapons it returns an attack action for those weapons</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#drop(edu.monash.fit2099.engine.positions.Location,edu.monash.fit2099.engine.items.Item,float)" class="member-name-link">drop</a><wbr>(edu.monash.fit2099.engine.positions.Location&nbsp;location,
- edu.monash.fit2099.engine.items.Item&nbsp;item,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#drop(edu.monash.fit2099.engine.positions.Location,edu.monash.fit2099.engine.items.Item,float)" class="member-name-link">drop</a><wbr>(engine.positions.Location&nbsp;location,
+ engine.items.Item&nbsp;item,
  float&nbsp;chance)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">a method to potentially drop an item</div>
@@ -211,11 +211,11 @@ implements <a href="../notification/DeathSubcriber.html" title="interface in gam
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">prompt operations on enemy once death of the actor it subscribes to happens.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>edu.monash.fit2099.engine.actions.Action</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#playTurn(edu.monash.fit2099.engine.actions.ActionList,edu.monash.fit2099.engine.actions.Action,edu.monash.fit2099.engine.positions.GameMap,edu.monash.fit2099.engine.displays.Display)" class="member-name-link">playTurn</a><wbr>(edu.monash.fit2099.engine.actions.ActionList&nbsp;actions,
- edu.monash.fit2099.engine.actions.Action&nbsp;lastAction,
- edu.monash.fit2099.engine.positions.GameMap&nbsp;map,
- edu.monash.fit2099.engine.displays.Display&nbsp;display)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>engine.actions.Action</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#playTurn(edu.monash.fit2099.engine.actions.ActionList,edu.monash.fit2099.engine.actions.Action,edu.monash.fit2099.engine.positions.GameMap,edu.monash.fit2099.engine.displays.Display)" class="member-name-link">playTurn</a><wbr>(engine.actions.ActionList&nbsp;actions,
+ engine.actions.Action&nbsp;lastAction,
+ engine.positions.GameMap&nbsp;map,
+ engine.displays.Display&nbsp;display)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">At each turn, select a valid action to perform.</div>
 </div>
@@ -228,10 +228,10 @@ implements <a href="../notification/DeathSubcriber.html" title="interface in gam
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-edu.monash.fit2099.engine.actors.Actor">Methods inherited from class&nbsp;edu.monash.fit2099.engine.actors.Actor</h3>
+<h3 id="methods-inherited-from-class-edu.monash.fit2099.engine.actors.Actor">Methods inherited from class&nbsp;engine.actors.Actor</h3>
 <code>addAttribute, addBalance, addItemToInventory, deductBalance, getAttribute, getAttributeMaximum, getBalance, getDisplayChar, getIntrinsicWeapon, getItemInventory, hasAttribute, hasCapability, heal, hurt, increaseDamageMultiplier, isConscious, modifyAttribute, modifyAttributeMaximum, removeItemFromInventory, setDisplayChar, toString, unconscious, unconscious, updateDamageMultiplier</code></div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="methods-inherited-from-class-edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;engine.GameEntity</h3>
 <code>addCapability, capabilitiesList, findCapabilitiesByType, removeCapability</code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
@@ -250,14 +250,14 @@ implements <a href="../notification/DeathSubcriber.html" title="interface in gam
 <li>
 <section class="detail" id="behaviours">
 <h3>behaviours</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>,<wbr>edu.monash.fit2099.engine.actors.Behaviour&gt;</span>&nbsp;<span class="element-name">behaviours</span></div>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>,<wbr>engine.actors.Behaviour&gt;</span>&nbsp;<span class="element-name">behaviours</span></div>
 <div class="block">A map list of behaviours and their corresponding priorities</div>
 </section>
 </li>
 <li>
 <section class="detail" id="target">
 <h3>target</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">edu.monash.fit2099.engine.actors.Actor</span>&nbsp;<span class="element-name">target</span></div>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">engine.actors.Actor</span>&nbsp;<span class="element-name">target</span></div>
 <div class="block">The actor who is the target of the enemy actor</div>
 </section>
 </li>
@@ -364,8 +364,8 @@ implements <a href="../notification/DeathSubcriber.html" title="interface in gam
 <li>
 <section class="detail" id="drop(edu.monash.fit2099.engine.positions.Location,edu.monash.fit2099.engine.items.Item,float)">
 <h3>drop</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">drop</span><wbr><span class="parameters">(edu.monash.fit2099.engine.positions.Location&nbsp;location,
- edu.monash.fit2099.engine.items.Item&nbsp;item,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">drop</span><wbr><span class="parameters">(engine.positions.Location&nbsp;location,
+ engine.items.Item&nbsp;item,
  float&nbsp;chance)</span></div>
 <div class="block">a method to potentially drop an item</div>
 <dl class="notes">
@@ -380,7 +380,7 @@ implements <a href="../notification/DeathSubcriber.html" title="interface in gam
 <section class="detail" id="addBehavior(int,edu.monash.fit2099.engine.actors.Behaviour)">
 <h3>addBehavior</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addBehavior</span><wbr><span class="parameters">(int&nbsp;priority,
- edu.monash.fit2099.engine.actors.Behaviour&nbsp;behaviour)</span></div>
+ engine.actors.Behaviour&nbsp;behaviour)</span></div>
 <div class="block">Gives the enemy actor the ability to have multiple behaviours</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -392,14 +392,14 @@ implements <a href="../notification/DeathSubcriber.html" title="interface in gam
 <li>
 <section class="detail" id="playTurn(edu.monash.fit2099.engine.actions.ActionList,edu.monash.fit2099.engine.actions.Action,edu.monash.fit2099.engine.positions.GameMap,edu.monash.fit2099.engine.displays.Display)">
 <h3>playTurn</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">edu.monash.fit2099.engine.actions.Action</span>&nbsp;<span class="element-name">playTurn</span><wbr><span class="parameters">(edu.monash.fit2099.engine.actions.ActionList&nbsp;actions,
- edu.monash.fit2099.engine.actions.Action&nbsp;lastAction,
- edu.monash.fit2099.engine.positions.GameMap&nbsp;map,
- edu.monash.fit2099.engine.displays.Display&nbsp;display)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">engine.actions.Action</span>&nbsp;<span class="element-name">playTurn</span><wbr><span class="parameters">(engine.actions.ActionList&nbsp;actions,
+ engine.actions.Action&nbsp;lastAction,
+ engine.positions.GameMap&nbsp;map,
+ engine.displays.Display&nbsp;display)</span></div>
 <div class="block">At each turn, select a valid action to perform.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code>playTurn</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.actors.Actor</code></dd>
+<dd><code>playTurn</code>&nbsp;in class&nbsp;<code>engine.actors.Actor</code></dd>
 <dt>Parameters:</dt>
 <dd><code>actions</code> - collection of possible Actions for this Actor</dd>
 <dd><code>lastAction</code> - The Action this Actor took last turn. Can do interesting things in conjunction with Action.getNextAction()</dd>
@@ -413,13 +413,13 @@ implements <a href="../notification/DeathSubcriber.html" title="interface in gam
 <li>
 <section class="detail" id="allowableActions(edu.monash.fit2099.engine.actors.Actor,java.lang.String,edu.monash.fit2099.engine.positions.GameMap)">
 <h3>allowableActions</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">edu.monash.fit2099.engine.actions.ActionList</span>&nbsp;<span class="element-name">allowableActions</span><wbr><span class="parameters">(edu.monash.fit2099.engine.actors.Actor&nbsp;otherActor,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">engine.actions.ActionList</span>&nbsp;<span class="element-name">allowableActions</span><wbr><span class="parameters">(engine.actors.Actor&nbsp;otherActor,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;direction,
- edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</span></div>
+ engine.positions.GameMap&nbsp;map)</span></div>
 <div class="block">checks for weapons in the other actors inventory and if there are any weapons it returns an attack action for those weapons</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code>allowableActions</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.actors.Actor</code></dd>
+<dd><code>allowableActions</code>&nbsp;in class&nbsp;<code>engine.actors.Actor</code></dd>
 <dt>Parameters:</dt>
 <dd><code>otherActor</code> - the Actor that might be performing attack</dd>
 <dd><code>direction</code> - String representing the direction of the other Actor</dd>

@@ -1,12 +1,11 @@
 package game.general;
 
 import java.util.Random;
-import edu.monash.fit2099.engine.actions.MoveActorAction;
-import edu.monash.fit2099.engine.displays.Display;
-import edu.monash.fit2099.engine.positions.FancyGroundFactory;
-import edu.monash.fit2099.engine.positions.GameMap;
-import edu.monash.fit2099.engine.positions.Ground;
-import edu.monash.fit2099.engine.positions.World;
+import engine.actions.MoveActorAction;
+import engine.displays.Display;
+import engine.positions.FancyGroundFactory;
+import engine.positions.GameMap;
+import engine.positions.World;
 import game.actors.*;
 import game.extended.ForestGameMap;
 import game.ground.*;

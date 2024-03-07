@@ -1,6 +1,6 @@
 package game.weather;
 
-import edu.monash.fit2099.engine.positions.GameMap;
+import engine.positions.GameMap;
 import game.actors.ForestKeeper;
 import game.actors.RedWolf;
 import game.extended.ForestGameMap;

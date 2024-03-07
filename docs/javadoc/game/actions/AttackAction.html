@@ -77,14 +77,14 @@ loadScripts(document, 'script');</script>
 <h1 title="Class AttackAction" class="title">Class AttackAction</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
-<div class="inheritance">edu.monash.fit2099.engine.actions.Action
+<div class="inheritance">engine.actions.Action
 <div class="inheritance">game.actions.AttackAction</div>
 </div>
 </div>
 <section class="description">
 <hr>
 <pre>public class <span class="type-name-label">AttackAction</span>
-extends edu.monash.fit2099.engine.actions.Action</pre>
+extends engine.actions.Action</pre>
 <div class="block">Action for the player to use the "AttackAction"
 
  Created by:</div>
@@ -115,16 +115,16 @@ extends edu.monash.fit2099.engine.actions.Action</pre>
 </thead>
 <tbody>
 <tr class="alt-color">
-<th class="col-constructor-name" scope="row"><code><span class="member-name-link"><a href="#%3Cinit%3E(edu.monash.fit2099.engine.actors.Actor,java.lang.String)">AttackAction</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;target,
+<th class="col-constructor-name" scope="row"><code><span class="member-name-link"><a href="#%3Cinit%3E(edu.monash.fit2099.engine.actors.Actor,java.lang.String)">AttackAction</a></span>&#8203;(engine.actors.Actor&nbsp;target,
 java.lang.String&nbsp;direction)</code></th>
 <td class="col-last">
 <div class="block">Constructor with intrinsic weapon as default</div>
 </td>
 </tr>
 <tr class="row-color">
-<th class="col-constructor-name" scope="row"><code><span class="member-name-link"><a href="#%3Cinit%3E(edu.monash.fit2099.engine.actors.Actor,java.lang.String,edu.monash.fit2099.engine.weapons.Weapon)">AttackAction</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;target,
+<th class="col-constructor-name" scope="row"><code><span class="member-name-link"><a href="#%3Cinit%3E(edu.monash.fit2099.engine.actors.Actor,java.lang.String,edu.monash.fit2099.engine.weapons.Weapon)">AttackAction</a></span>&#8203;(engine.actors.Actor&nbsp;target,
 java.lang.String&nbsp;direction,
-edu.monash.fit2099.engine.weapons.Weapon&nbsp;weapon)</code></th>
+engine.weapons.Weapon&nbsp;weapon)</code></th>
 <td class="col-last">
 <div class="block">Constructor.</div>
 </td>
@@ -152,15 +152,15 @@ edu.monash.fit2099.engine.weapons.Weapon&nbsp;weapon)</code></th>
 <tbody>
 <tr class="alt-color" id="i0">
 <td class="col-first"><code>java.lang.String</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#execute(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">execute</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
-edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#execute(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">execute</a></span>&#8203;(engine.actors.Actor&nbsp;actor,
+engine.positions.GameMap&nbsp;map)</code></th>
 <td class="col-last">
 <div class="block">Checks if the actor has a weapon, is conscious and their ability to attack</div>
 </td>
 </tr>
 <tr class="row-color" id="i1">
 <td class="col-first"><code>java.lang.String</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#menuDescription(edu.monash.fit2099.engine.actors.Actor)">menuDescription</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;actor)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#menuDescription(edu.monash.fit2099.engine.actors.Actor)">menuDescription</a></span>&#8203;(engine.actors.Actor&nbsp;actor)</code></th>
 <td class="col-last">
 <div class="block">A description to be displayed to the user to attack an enemy</div>
 </td>
@@ -170,7 +170,7 @@ edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></th>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.actions.Action">Methods inherited from class&nbsp;edu.monash.fit2099.engine.actions.Action</h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.actions.Action">Methods inherited from class&nbsp;engine.actions.Action</h3>
 <code>getNextAction, hotkey</code></div>
 <div class="inherited-list">
 <h3 id="methods.inherited.from.class.java.lang.Object">Methods inherited from class&nbsp;java.lang.Object</h3>
@@ -189,9 +189,9 @@ edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></th>
 <li>
 <section class="detail" id="&lt;init&gt;(edu.monash.fit2099.engine.actors.Actor,java.lang.String,edu.monash.fit2099.engine.weapons.Weapon)">
 <h3>AttackAction</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="member-name">AttackAction</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;target,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="member-name">AttackAction</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;target,
 java.lang.String&nbsp;direction,
-edu.monash.fit2099.engine.weapons.Weapon&nbsp;weapon)</span></div>
+engine.weapons.Weapon&nbsp;weapon)</span></div>
 <div class="block">Constructor.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -203,7 +203,7 @@ edu.monash.fit2099.engine.weapons.Weapon&nbsp;weapon)</span></div>
 <li>
 <section class="detail" id="&lt;init&gt;(edu.monash.fit2099.engine.actors.Actor,java.lang.String)">
 <h3>AttackAction</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="member-name">AttackAction</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;target,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="member-name">AttackAction</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;target,
 java.lang.String&nbsp;direction)</span></div>
 <div class="block">Constructor with intrinsic weapon as default</div>
 <dl class="notes">
@@ -224,12 +224,12 @@ java.lang.String&nbsp;direction)</span></div>
 <li>
 <section class="detail" id="execute(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">
 <h3>execute</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">execute</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
-edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">execute</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;actor,
+engine.positions.GameMap&nbsp;map)</span></div>
 <div class="block">Checks if the actor has a weapon, is conscious and their ability to attack</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code>execute</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.actions.Action</code></dd>
+<dd><code>execute</code>&nbsp;in class&nbsp;<code>engine.actions.Action</code></dd>
 <dt>Parameters:</dt>
 <dd><code>actor</code> - The actor performing the action.</dd>
 <dd><code>map</code> - The map the actor is on.</dd>
@@ -241,11 +241,11 @@ edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</span></div>
 <li>
 <section class="detail" id="menuDescription(edu.monash.fit2099.engine.actors.Actor)">
 <h3>menuDescription</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">menuDescription</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;actor)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">menuDescription</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;actor)</span></div>
 <div class="block">A description to be displayed to the user to attack an enemy</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code>menuDescription</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.actions.Action</code></dd>
+<dd><code>menuDescription</code>&nbsp;in class&nbsp;<code>engine.actions.Action</code></dd>
 <dt>Parameters:</dt>
 <dd><code>actor</code> - The actor performing the action.</dd>
 <dt>Returns:</dt>

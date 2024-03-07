@@ -1,16 +1,16 @@
 package game.actors;
 
-import edu.monash.fit2099.engine.actions.Action;
-import edu.monash.fit2099.engine.actions.ActionList;
-import edu.monash.fit2099.engine.actions.DoNothingAction;
-import edu.monash.fit2099.engine.actors.Actor;
-import edu.monash.fit2099.engine.actors.Behaviour;
-import edu.monash.fit2099.engine.actors.attributes.ActorAttributeOperations;
-import edu.monash.fit2099.engine.actors.attributes.BaseActorAttributes;
-import edu.monash.fit2099.engine.displays.Display;
-import edu.monash.fit2099.engine.items.Item;
-import edu.monash.fit2099.engine.positions.GameMap;
-import edu.monash.fit2099.engine.positions.Location;
+import engine.actions.Action;
+import engine.actions.ActionList;
+import engine.actions.DoNothingAction;
+import engine.actors.Actor;
+import engine.actors.Behaviour;
+import engine.actors.attributes.ActorAttributeOperations;
+import engine.actors.attributes.BaseActorAttributes;
+import engine.displays.Display;
+import engine.items.Item;
+import engine.positions.GameMap;
+import engine.positions.Location;
 import game.actions.DieAction;
 import game.general.Status;
 import game.notification.DeathSubcriber;

@@ -1,13 +1,12 @@
 package game.actions;
 
-import edu.monash.fit2099.engine.actions.Action;
-import edu.monash.fit2099.engine.actors.Actor;
-import edu.monash.fit2099.engine.actors.attributes.ActorAttributeOperations;
-import edu.monash.fit2099.engine.actors.attributes.BaseActorAttributes;
-import edu.monash.fit2099.engine.positions.Exit;
-import edu.monash.fit2099.engine.positions.GameMap;
-import edu.monash.fit2099.engine.positions.Location;
-import edu.monash.fit2099.engine.weapons.WeaponItem;
+import engine.actions.Action;
+import engine.actors.Actor;
+import engine.actors.attributes.ActorAttributeOperations;
+import engine.actors.attributes.BaseActorAttributes;
+import engine.positions.Exit;
+import engine.positions.GameMap;
+import engine.positions.Location;
 import game.items.GiantHammer;
 
 /**

@@ -2,7 +2,7 @@ package game.weather;
 
 import java.util.Random;
 
-import edu.monash.fit2099.engine.positions.GameMap;
+import engine.positions.GameMap;
 import game.actors.RedWolf;
 import game.extended.ForestGameMap;
 import game.ground.Bush;

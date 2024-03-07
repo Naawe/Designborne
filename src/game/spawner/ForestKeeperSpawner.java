@@ -1,12 +1,9 @@
 package game.spawner;
 
-import edu.monash.fit2099.engine.actors.Actor;
-import edu.monash.fit2099.engine.positions.Exit;
-import edu.monash.fit2099.engine.positions.Location;
-import game.actors.EnemyActor;
+import engine.actors.Actor;
+import engine.positions.Exit;
+import engine.positions.Location;
 import game.actors.ForestKeeper;
-import game.actors.RedWolf;
-import game.actors.WanderingUndead;
 
 import java.util.Random;
 

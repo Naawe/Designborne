@@ -77,8 +77,8 @@ loadScripts(document, 'script');</script>
 <h1 title="Class MartianItem" class="title">Class MartianItem</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
-<div class="inheritance"><a href="../../../engine/GameEntity.html" title="class in edu.monash.fit2099.engine">edu.monash.fit2099.engine.GameEntity</a>
-<div class="inheritance"><a href="../../../engine/items/Item.html" title="class in edu.monash.fit2099.engine.items">edu.monash.fit2099.engine.items.Item</a>
+<div class="inheritance"><a href="../../../engine/GameEntity.html" title="class in engine">engine.GameEntity</a>
+<div class="inheritance"><a href="../../../engine/items/Item.html" title="class in engine.items">engine.items.Item</a>
 <div class="inheritance">edu.monash.fit2099.demo.mars.items.MartianItem</div>
 </div>
 </div>
@@ -86,11 +86,11 @@ loadScripts(document, 'script');</script>
 <section class="description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../engine/displays/Printable.html" title="interface in edu.monash.fit2099.engine.displays">Printable</a></code></dd>
+<dd><code><a href="../../../engine/displays/Printable.html" title="interface in engine.displays">Printable</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="type-name-label">MartianItem</span>
-extends <a href="../../../engine/items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a></pre>
+extends <a href="../../../engine/items/Item.html" title="class in engine.items">Item</a></pre>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -99,10 +99,10 @@ extends <a href="../../../engine/items/Item.html" title="class in edu.monash.fit
 <section class="field-summary" id="field.summary">
 <h2>Field Summary</h2>
 <div class="inherited-list">
-<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.items.Item">Fields inherited from class&nbsp;edu.monash.fit2099.engine.items.<a href="../../../engine/items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a></h3>
+<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.items.Item">Fields inherited from class&nbsp;engine.items.<a href="../../../engine/items/Item.html" title="class in engine.items">Item</a></h3>
 <code><a href="../../../engine/items/Item.html#portable">portable</a></code></div>
 <div class="inherited-list">
-<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;edu.monash.fit2099.engine.<a href="../../../engine/GameEntity.html" title="class in edu.monash.fit2099.engine">GameEntity</a></h3>
+<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;engine.<a href="../../../engine/GameEntity.html" title="class in engine">GameEntity</a></h3>
 <code><a href="../../../engine/GameEntity.html#capabilitySet">capabilitySet</a></code></div>
 </section>
 </li>
@@ -149,12 +149,12 @@ boolean&nbsp;portable)</code></th>
 <tbody>
 <tr class="alt-color" id="i0">
 <td class="col-first"><code>void</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#addSampleAction(edu.monash.fit2099.engine.actions.Action)">addSampleAction</a></span>&#8203;(<a href="../../../engine/actions/Action.html" title="class in edu.monash.fit2099.engine.actions">Action</a>&nbsp;newAction)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#addSampleAction(edu.monash.fit2099.engine.actions.Action)">addSampleAction</a></span>&#8203;(<a href="../../../engine/actions/Action.html" title="class in engine.actions">Action</a>&nbsp;newAction)</code></th>
 <td class="col-last">&nbsp;</td>
 </tr>
 <tr class="row-color" id="i1">
-<td class="col-first"><code><a href="../../../engine/actions/ActionList.html" title="class in edu.monash.fit2099.engine.actions">ActionList</a></code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#allowableActions(edu.monash.fit2099.engine.positions.Location)">allowableActions</a></span>&#8203;(<a href="../../../engine/positions/Location.html" title="class in edu.monash.fit2099.engine.positions">Location</a>&nbsp;location)</code></th>
+<td class="col-first"><code><a href="../../../engine/actions/ActionList.html" title="class in engine.actions">ActionList</a></code></td>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#allowableActions(edu.monash.fit2099.engine.positions.Location)">allowableActions</a></span>&#8203;(<a href="../../../engine/positions/Location.html" title="class in engine.positions">Location</a>&nbsp;location)</code></th>
 <td class="col-last">
 <div class="block">List of allowable actions that can be performed on the item when it is on the ground
  Example #1: a trap can return an action to disarm the trap.</div>
@@ -165,10 +165,10 @@ boolean&nbsp;portable)</code></th>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.items.Item">Methods inherited from class&nbsp;edu.monash.fit2099.engine.items.<a href="../../../engine/items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a></h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.items.Item">Methods inherited from class&nbsp;engine.items.<a href="../../../engine/items/Item.html" title="class in engine.items">Item</a></h3>
 <code><a href="../../../engine/items/Item.html#allowableActions(edu.monash.fit2099.engine.actors.Actor)">allowableActions</a>, <a href="../../../engine/items/Item.html#allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location)">allowableActions</a>, <a href="../../../engine/items/Item.html#getDisplayChar()">getDisplayChar</a>, <a href="../../../engine/items/Item.html#getDropAction(edu.monash.fit2099.engine.actors.Actor)">getDropAction</a>, <a href="../../../engine/items/Item.html#getPickUpAction(edu.monash.fit2099.engine.actors.Actor)">getPickUpAction</a>, <a href="../../../engine/items/Item.html#setDisplayChar(char)">setDisplayChar</a>, <a href="../../../engine/items/Item.html#tick(edu.monash.fit2099.engine.positions.Location)">tick</a>, <a href="../../../engine/items/Item.html#tick(edu.monash.fit2099.engine.positions.Location,edu.monash.fit2099.engine.actors.Actor)">tick</a>, <a href="../../../engine/items/Item.html#togglePortability()">togglePortability</a>, <a href="../../../engine/items/Item.html#toString()">toString</a></code></div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;edu.monash.fit2099.engine.<a href="../../../engine/GameEntity.html" title="class in edu.monash.fit2099.engine">GameEntity</a></h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;engine.<a href="../../../engine/GameEntity.html" title="class in engine">GameEntity</a></h3>
 <code><a href="../../../engine/GameEntity.html#addCapability(java.lang.Enum)">addCapability</a>, <a href="../../../engine/GameEntity.html#capabilitiesList()">capabilitiesList</a>, <a href="../../../engine/GameEntity.html#findCapabilitiesByType(java.lang.Class)">findCapabilitiesByType</a>, <a href="../../../engine/GameEntity.html#hasCapability(java.lang.Enum)">hasCapability</a>, <a href="../../../engine/GameEntity.html#removeCapability(java.lang.Enum)">removeCapability</a></code></div>
 <div class="inherited-list">
 <h3 id="methods.inherited.from.class.java.lang.Object">Methods inherited from class&nbsp;java.lang.Object</h3>
@@ -203,19 +203,19 @@ boolean&nbsp;portable)</span></div>
 <li>
 <section class="detail" id="addSampleAction(edu.monash.fit2099.engine.actions.Action)">
 <h3>addSampleAction</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">addSampleAction</span>&#8203;(<span class="parameters"><a href="../../../engine/actions/Action.html" title="class in edu.monash.fit2099.engine.actions">Action</a>&nbsp;newAction)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">addSampleAction</span>&#8203;(<span class="parameters"><a href="../../../engine/actions/Action.html" title="class in engine.actions">Action</a>&nbsp;newAction)</span></div>
 </section>
 </li>
 <li>
 <section class="detail" id="allowableActions(edu.monash.fit2099.engine.positions.Location)">
 <h3>allowableActions</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../engine/actions/ActionList.html" title="class in edu.monash.fit2099.engine.actions">ActionList</a></span>&nbsp;<span class="member-name">allowableActions</span>&#8203;(<span class="parameters"><a href="../../../engine/positions/Location.html" title="class in edu.monash.fit2099.engine.positions">Location</a>&nbsp;location)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../engine/actions/ActionList.html" title="class in engine.actions">ActionList</a></span>&nbsp;<span class="member-name">allowableActions</span>&#8203;(<span class="parameters"><a href="../../../engine/positions/Location.html" title="class in engine.positions">Location</a>&nbsp;location)</span></div>
 <div class="block"><span class="descfrm-type-label">Description copied from class:&nbsp;<code><a href="../../../engine/items/Item.html#allowableActions(edu.monash.fit2099.engine.positions.Location)">Item</a></code></span></div>
 <div class="block">List of allowable actions that can be performed on the item when it is on the ground
  Example #1: a trap can return an action to disarm the trap.</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code><a href="../../../engine/items/Item.html#allowableActions(edu.monash.fit2099.engine.positions.Location)">allowableActions</a></code>&nbsp;in class&nbsp;<code><a href="../../../engine/items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a></code></dd>
+<dd><code><a href="../../../engine/items/Item.html#allowableActions(edu.monash.fit2099.engine.positions.Location)">allowableActions</a></code>&nbsp;in class&nbsp;<code><a href="../../../engine/items/Item.html" title="class in engine.items">Item</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>location</code> - the location of the ground on which the item lies</dd>
 <dt>Returns:</dt>

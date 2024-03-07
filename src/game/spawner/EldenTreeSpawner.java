@@ -1,8 +1,8 @@
 package game.spawner;
 
-import edu.monash.fit2099.engine.actors.Actor;
-import edu.monash.fit2099.engine.positions.Exit;
-import edu.monash.fit2099.engine.positions.Location;
+import engine.actors.Actor;
+import engine.positions.Exit;
+import engine.positions.Location;
 import game.actors.*;
 
 import java.util.Random;

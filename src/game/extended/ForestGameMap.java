@@ -3,11 +3,11 @@ package game.extended;
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.monash.fit2099.engine.actors.Actor;
-import edu.monash.fit2099.engine.positions.GameMap;
-import edu.monash.fit2099.engine.positions.Ground;
-import edu.monash.fit2099.engine.positions.GroundFactory;
-import edu.monash.fit2099.engine.positions.Location;
+import engine.actors.Actor;
+import engine.positions.GameMap;
+import engine.positions.Ground;
+import engine.positions.GroundFactory;
+import engine.positions.Location;
 import game.actors.EnemyActor;
 import game.ground.SpawningGround;
 

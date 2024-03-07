@@ -6,7 +6,7 @@
 <title>Actor</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="dc.created" content="2023-10-06">
-<meta name="description" content="declaration: package: edu.monash.fit2099.engine.actors, class: Actor">
+<meta name="description" content="declaration: package: engine.actors, class: Actor">
 <meta name="generator" content="javadoc/ClassWriterImpl">
 <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
 <link rel="stylesheet" type="text/css" href="../../../../../script-dir/jquery-ui.min.css" title="Style">
@@ -73,18 +73,18 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">edu.monash.fit2099.engine.actors</a></div>
+<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">engine.actors</a></div>
 <h1 title="Class Actor" class="title">Class Actor</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
-<div class="inheritance"><a href="../GameEntity.html" title="class in edu.monash.fit2099.engine">edu.monash.fit2099.engine.GameEntity</a>
-<div class="inheritance">edu.monash.fit2099.engine.actors.Actor</div>
+<div class="inheritance"><a href="../GameEntity.html" title="class in engine">engine.GameEntity</a>
+<div class="inheritance">engine.actors.Actor</div>
 </div>
 </div>
 <section class="description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../displays/Printable.html" title="interface in edu.monash.fit2099.engine.displays">Printable</a></code></dd>
+<dd><code><a href="../displays/Printable.html" title="interface in engine.displays">Printable</a></code></dd>
 </dl>
 <dl class="notes">
 <dt>Direct Known Subclasses:</dt>
@@ -92,12 +92,12 @@ loadScripts(document, 'script');</script>
 </dl>
 <hr>
 <pre>public abstract class <span class="type-name-label">Actor</span>
-extends <a href="../GameEntity.html" title="class in edu.monash.fit2099.engine">GameEntity</a>
-implements <a href="../displays/Printable.html" title="interface in edu.monash.fit2099.engine.displays">Printable</a></pre>
-<div class="block">The Actor class represents a <a href="../GameEntity.html" title="class in edu.monash.fit2099.engine"><code>GameEntity</code></a> that can perform an <a href="../actions/Action.html" title="class in edu.monash.fit2099.engine.actions"><code>Action</code></a>.
+extends <a href="../GameEntity.html" title="class in engine">GameEntity</a>
+implements <a href="../displays/Printable.html" title="interface in engine.displays">Printable</a></pre>
+<div class="block">The Actor class represents a <a href="../GameEntity.html" title="class in engine"><code>GameEntity</code></a> that can perform an <a href="../actions/Action.html" title="class in engine.actions"><code>Action</code></a>.
  It has a hit points attribute, which represents its health. When this value
  reaches zero, the Actor is unconscious.
- Additionally, an Actor has a collection of <a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items"><code>Item</code></a>s it is carrying in its inventory.</div>
+ Additionally, an Actor has a collection of <a href="../items/Item.html" title="class in engine.items"><code>Item</code></a>s it is carrying in its inventory.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -127,7 +127,7 @@ implements <a href="../displays/Printable.html" title="interface in edu.monash.f
 </table>
 </div>
 <div class="inherited-list">
-<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;edu.monash.fit2099.engine.<a href="../GameEntity.html" title="class in edu.monash.fit2099.engine">GameEntity</a></h3>
+<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;engine.<a href="../GameEntity.html" title="class in engine">GameEntity</a></h3>
 <code><a href="../GameEntity.html#capabilitySet">capabilitySet</a></code></div>
 </section>
 </li>
@@ -177,7 +177,7 @@ int&nbsp;hitPoints)</code></th>
 <tr class="alt-color" id="i0">
 <td class="col-first"><code>void</code></td>
 <th class="col-second" scope="row"><code><span class="member-name-link"><a href="#addAttribute(java.lang.Enum,edu.monash.fit2099.engine.actors.attributes.ActorAttribute)">addAttribute</a></span>&#8203;(java.lang.Enum&lt;?&gt;&nbsp;name,
-<a href="attributes/ActorAttribute.html" title="interface in edu.monash.fit2099.engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;&nbsp;attribute)</code></th>
+<a href="attributes/ActorAttribute.html" title="interface in engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;&nbsp;attribute)</code></th>
 <td class="col-last">
 <div class="block">A method for adding an attribute to the actor.</div>
 </td>
@@ -191,16 +191,16 @@ int&nbsp;hitPoints)</code></th>
 </tr>
 <tr class="alt-color" id="i2">
 <td class="col-first"><code>void</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#addItemToInventory(edu.monash.fit2099.engine.items.Item)">addItemToInventory</a></span>&#8203;(<a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a>&nbsp;item)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#addItemToInventory(edu.monash.fit2099.engine.items.Item)">addItemToInventory</a></span>&#8203;(<a href="../items/Item.html" title="class in engine.items">Item</a>&nbsp;item)</code></th>
 <td class="col-last">
 <div class="block">Add an item to this Actor's inventory.</div>
 </td>
 </tr>
 <tr class="row-color" id="i3">
-<td class="col-first"><code><a href="../actions/ActionList.html" title="class in edu.monash.fit2099.engine.actions">ActionList</a></code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor,java.lang.String,edu.monash.fit2099.engine.positions.GameMap)">allowableActions</a></span>&#8203;(<a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;otherActor,
+<td class="col-first"><code><a href="../actions/ActionList.html" title="class in engine.actions">ActionList</a></code></td>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor,java.lang.String,edu.monash.fit2099.engine.positions.GameMap)">allowableActions</a></span>&#8203;(<a href="Actor.html" title="class in engine.actors">Actor</a>&nbsp;otherActor,
 java.lang.String&nbsp;direction,
-<a href="../positions/GameMap.html" title="class in edu.monash.fit2099.engine.positions">GameMap</a>&nbsp;map)</code></th>
+<a href="../positions/GameMap.html" title="class in engine.positions">GameMap</a>&nbsp;map)</code></th>
 <td class="col-last">
 <div class="block">Returns a new collection of the Actions that the otherActor can do to the current Actor.</div>
 </td>
@@ -241,14 +241,14 @@ java.lang.String&nbsp;direction,
 </td>
 </tr>
 <tr class="row-color" id="i9">
-<td class="col-first"><code><a href="../weapons/IntrinsicWeapon.html" title="class in edu.monash.fit2099.engine.weapons">IntrinsicWeapon</a></code></td>
+<td class="col-first"><code><a href="../weapons/IntrinsicWeapon.html" title="class in engine.weapons">IntrinsicWeapon</a></code></td>
 <th class="col-second" scope="row"><code><span class="member-name-link"><a href="#getIntrinsicWeapon()">getIntrinsicWeapon</a></span>()</code></th>
 <td class="col-last">
 <div class="block">Creates and returns an intrinsic weapon.</div>
 </td>
 </tr>
 <tr class="alt-color" id="i10">
-<td class="col-first"><code>java.util.List&lt;<a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a>&gt;</code></td>
+<td class="col-first"><code>java.util.List&lt;<a href="../items/Item.html" title="class in engine.items">Item</a>&gt;</code></td>
 <th class="col-second" scope="row"><code><span class="member-name-link"><a href="#getItemInventory()">getItemInventory</a></span>()</code></th>
 <td class="col-last">
 <div class="block">Get a copy of this Actor's inventory list.</div>
@@ -300,7 +300,7 @@ java.lang.String&nbsp;direction,
 <tr class="row-color" id="i17">
 <td class="col-first"><code>void</code></td>
 <th class="col-second" scope="row"><code><span class="member-name-link"><a href="#modifyAttribute(java.lang.Enum,edu.monash.fit2099.engine.actors.attributes.ActorAttributeOperations,int)">modifyAttribute</a></span>&#8203;(java.lang.Enum&lt;?&gt;&nbsp;name,
-<a href="attributes/ActorAttributeOperations.html" title="enum in edu.monash.fit2099.engine.actors.attributes">ActorAttributeOperations</a>&nbsp;operation,
+<a href="attributes/ActorAttributeOperations.html" title="enum in engine.actors.attributes">ActorAttributeOperations</a>&nbsp;operation,
 int&nbsp;value)</code></th>
 <td class="col-last">
 <div class="block">A method for modifying the value of an attribute.</div>
@@ -309,25 +309,25 @@ int&nbsp;value)</code></th>
 <tr class="alt-color" id="i18">
 <td class="col-first"><code>void</code></td>
 <th class="col-second" scope="row"><code><span class="member-name-link"><a href="#modifyAttributeMaximum(java.lang.Enum,edu.monash.fit2099.engine.actors.attributes.ActorAttributeOperations,int)">modifyAttributeMaximum</a></span>&#8203;(java.lang.Enum&lt;?&gt;&nbsp;name,
-<a href="attributes/ActorAttributeOperations.html" title="enum in edu.monash.fit2099.engine.actors.attributes">ActorAttributeOperations</a>&nbsp;operation,
+<a href="attributes/ActorAttributeOperations.html" title="enum in engine.actors.attributes">ActorAttributeOperations</a>&nbsp;operation,
 int&nbsp;value)</code></th>
 <td class="col-last">
 <div class="block">A method for modifying the maximum value of an attribute.</div>
 </td>
 </tr>
 <tr class="row-color" id="i19">
-<td class="col-first"><code>abstract <a href="../actions/Action.html" title="class in edu.monash.fit2099.engine.actions">Action</a></code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#playTurn(edu.monash.fit2099.engine.actions.ActionList,edu.monash.fit2099.engine.actions.Action,edu.monash.fit2099.engine.positions.GameMap,edu.monash.fit2099.engine.displays.Display)">playTurn</a></span>&#8203;(<a href="../actions/ActionList.html" title="class in edu.monash.fit2099.engine.actions">ActionList</a>&nbsp;actions,
-<a href="../actions/Action.html" title="class in edu.monash.fit2099.engine.actions">Action</a>&nbsp;lastAction,
-<a href="../positions/GameMap.html" title="class in edu.monash.fit2099.engine.positions">GameMap</a>&nbsp;map,
-<a href="../displays/Display.html" title="class in edu.monash.fit2099.engine.displays">Display</a>&nbsp;display)</code></th>
+<td class="col-first"><code>abstract <a href="../actions/Action.html" title="class in engine.actions">Action</a></code></td>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#playTurn(edu.monash.fit2099.engine.actions.ActionList,edu.monash.fit2099.engine.actions.Action,edu.monash.fit2099.engine.positions.GameMap,edu.monash.fit2099.engine.displays.Display)">playTurn</a></span>&#8203;(<a href="../actions/ActionList.html" title="class in engine.actions">ActionList</a>&nbsp;actions,
+<a href="../actions/Action.html" title="class in engine.actions">Action</a>&nbsp;lastAction,
+<a href="../positions/GameMap.html" title="class in engine.positions">GameMap</a>&nbsp;map,
+<a href="../displays/Display.html" title="class in engine.displays">Display</a>&nbsp;display)</code></th>
 <td class="col-last">
 <div class="block">Select and return an action to perform on the current turn.</div>
 </td>
 </tr>
 <tr class="alt-color" id="i20">
 <td class="col-first"><code>void</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#removeItemFromInventory(edu.monash.fit2099.engine.items.Item)">removeItemFromInventory</a></span>&#8203;(<a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a>&nbsp;item)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#removeItemFromInventory(edu.monash.fit2099.engine.items.Item)">removeItemFromInventory</a></span>&#8203;(<a href="../items/Item.html" title="class in engine.items">Item</a>&nbsp;item)</code></th>
 <td class="col-last">
 <div class="block">Remove an item from this Actor's inventory.</div>
 </td>
@@ -348,15 +348,15 @@ int&nbsp;value)</code></th>
 </tr>
 <tr class="row-color" id="i23">
 <td class="col-first"><code>java.lang.String</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#unconscious(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">unconscious</a></span>&#8203;(<a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor,
-<a href="../positions/GameMap.html" title="class in edu.monash.fit2099.engine.positions">GameMap</a>&nbsp;map)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#unconscious(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">unconscious</a></span>&#8203;(<a href="Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor,
+<a href="../positions/GameMap.html" title="class in engine.positions">GameMap</a>&nbsp;map)</code></th>
 <td class="col-last">
 <div class="block">Method that can be executed when the actor is unconscious due to the action of another actor</div>
 </td>
 </tr>
 <tr class="alt-color" id="i24">
 <td class="col-first"><code>java.lang.String</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#unconscious(edu.monash.fit2099.engine.positions.GameMap)">unconscious</a></span>&#8203;(<a href="../positions/GameMap.html" title="class in edu.monash.fit2099.engine.positions">GameMap</a>&nbsp;map)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#unconscious(edu.monash.fit2099.engine.positions.GameMap)">unconscious</a></span>&#8203;(<a href="../positions/GameMap.html" title="class in engine.positions">GameMap</a>&nbsp;map)</code></th>
 <td class="col-last">
 <div class="block">Method that can be executed when the actor is unconscious due to natural causes or accident
  For example, the actor is unconscious due to them falling into a deep well.</div>
@@ -374,7 +374,7 @@ int&nbsp;value)</code></th>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;edu.monash.fit2099.engine.<a href="../GameEntity.html" title="class in edu.monash.fit2099.engine">GameEntity</a></h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;engine.<a href="../GameEntity.html" title="class in engine">GameEntity</a></h3>
 <code><a href="../GameEntity.html#addCapability(java.lang.Enum)">addCapability</a>, <a href="../GameEntity.html#capabilitiesList()">capabilitiesList</a>, <a href="../GameEntity.html#findCapabilitiesByType(java.lang.Class)">findCapabilitiesByType</a>, <a href="../GameEntity.html#removeCapability(java.lang.Enum)">removeCapability</a></code></div>
 <div class="inherited-list">
 <h3 id="methods.inherited.from.class.java.lang.Object">Methods inherited from class&nbsp;java.lang.Object</h3>
@@ -445,12 +445,12 @@ int&nbsp;hitPoints)</span></div>
 <section class="detail" id="addAttribute(java.lang.Enum,edu.monash.fit2099.engine.actors.attributes.ActorAttribute)">
 <h3>addAttribute</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">addAttribute</span>&#8203;(<span class="parameters">java.lang.Enum&lt;?&gt;&nbsp;name,
-<a href="attributes/ActorAttribute.html" title="interface in edu.monash.fit2099.engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;&nbsp;attribute)</span></div>
+<a href="attributes/ActorAttribute.html" title="interface in engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;&nbsp;attribute)</span></div>
 <div class="block">A method for adding an attribute to the actor.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>name</code> - the name of the attribute to be added, which must be a value of an enumeration, such as BaseActorAttributes.STAMINA.</dd>
-<dd><code>attribute</code> - an object that implements the <a href="attributes/ActorAttribute.html" title="interface in edu.monash.fit2099.engine.actors.attributes"><code>ActorAttribute</code></a> interface.</dd>
+<dd><code>attribute</code> - an object that implements the <a href="attributes/ActorAttribute.html" title="interface in engine.actors.attributes"><code>ActorAttribute</code></a> interface.</dd>
 </dl>
 </section>
 </li>
@@ -458,7 +458,7 @@ int&nbsp;hitPoints)</span></div>
 <section class="detail" id="modifyAttribute(java.lang.Enum,edu.monash.fit2099.engine.actors.attributes.ActorAttributeOperations,int)">
 <h3>modifyAttribute</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">modifyAttribute</span>&#8203;(<span class="parameters">java.lang.Enum&lt;?&gt;&nbsp;name,
-<a href="attributes/ActorAttributeOperations.html" title="enum in edu.monash.fit2099.engine.actors.attributes">ActorAttributeOperations</a>&nbsp;operation,
+<a href="attributes/ActorAttributeOperations.html" title="enum in engine.actors.attributes">ActorAttributeOperations</a>&nbsp;operation,
 int&nbsp;value)</span>
                      throws <span class="exceptions">java.lang.IllegalArgumentException</span></div>
 <div class="block">A method for modifying the value of an attribute.
@@ -485,7 +485,7 @@ int&nbsp;value)</span>
 <section class="detail" id="modifyAttributeMaximum(java.lang.Enum,edu.monash.fit2099.engine.actors.attributes.ActorAttributeOperations,int)">
 <h3>modifyAttributeMaximum</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">modifyAttributeMaximum</span>&#8203;(<span class="parameters">java.lang.Enum&lt;?&gt;&nbsp;name,
-<a href="attributes/ActorAttributeOperations.html" title="enum in edu.monash.fit2099.engine.actors.attributes">ActorAttributeOperations</a>&nbsp;operation,
+<a href="attributes/ActorAttributeOperations.html" title="enum in engine.actors.attributes">ActorAttributeOperations</a>&nbsp;operation,
 int&nbsp;value)</span>
                             throws <span class="exceptions">java.lang.IllegalArgumentException</span></div>
 <div class="block">A method for modifying the maximum value of an attribute.
@@ -605,7 +605,7 @@ int&nbsp;value)</span>
 <div class="block">Returns the Actor's display character, so that it can be displayed in the UI.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../displays/Printable.html#getDisplayChar()">getDisplayChar</a></code>&nbsp;in interface&nbsp;<code><a href="../displays/Printable.html" title="interface in edu.monash.fit2099.engine.displays">Printable</a></code></dd>
+<dd><code><a href="../displays/Printable.html#getDisplayChar()">getDisplayChar</a></code>&nbsp;in interface&nbsp;<code><a href="../displays/Printable.html" title="interface in engine.displays">Printable</a></code></dd>
 <dt>Returns:</dt>
 <dd>the Actor's display character</dd>
 </dl>
@@ -625,7 +625,7 @@ int&nbsp;value)</span>
 <li>
 <section class="detail" id="addItemToInventory(edu.monash.fit2099.engine.items.Item)">
 <h3>addItemToInventory</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">addItemToInventory</span>&#8203;(<span class="parameters"><a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a>&nbsp;item)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">addItemToInventory</span>&#8203;(<span class="parameters"><a href="../items/Item.html" title="class in engine.items">Item</a>&nbsp;item)</span></div>
 <div class="block">Add an item to this Actor's inventory.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -636,7 +636,7 @@ int&nbsp;value)</span>
 <li>
 <section class="detail" id="removeItemFromInventory(edu.monash.fit2099.engine.items.Item)">
 <h3>removeItemFromInventory</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">removeItemFromInventory</span>&#8203;(<span class="parameters"><a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a>&nbsp;item)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">removeItemFromInventory</span>&#8203;(<span class="parameters"><a href="../items/Item.html" title="class in engine.items">Item</a>&nbsp;item)</span></div>
 <div class="block">Remove an item from this Actor's inventory.
  Although it is possible to return the itemInventory to be modified by the client directly,
  it is not done so to prevent privacy leak.</div>
@@ -649,7 +649,7 @@ int&nbsp;value)</span>
 <li>
 <section class="detail" id="getItemInventory()">
 <h3>getItemInventory</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.util.List&lt;<a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a>&gt;</span>&nbsp;<span class="member-name">getItemInventory</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.util.List&lt;<a href="../items/Item.html" title="class in engine.items">Item</a>&gt;</span>&nbsp;<span class="member-name">getItemInventory</span>()</div>
 <div class="block">Get a copy of this Actor's inventory list.
  Although it is possible to return the itemInventory to be modified by the client directly,
  it is not done so to prevent privacy leak.</div>
@@ -662,10 +662,10 @@ int&nbsp;value)</span>
 <li>
 <section class="detail" id="playTurn(edu.monash.fit2099.engine.actions.ActionList,edu.monash.fit2099.engine.actions.Action,edu.monash.fit2099.engine.positions.GameMap,edu.monash.fit2099.engine.displays.Display)">
 <h3>playTurn</h3>
-<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="../actions/Action.html" title="class in edu.monash.fit2099.engine.actions">Action</a></span>&nbsp;<span class="member-name">playTurn</span>&#8203;(<span class="parameters"><a href="../actions/ActionList.html" title="class in edu.monash.fit2099.engine.actions">ActionList</a>&nbsp;actions,
-<a href="../actions/Action.html" title="class in edu.monash.fit2099.engine.actions">Action</a>&nbsp;lastAction,
-<a href="../positions/GameMap.html" title="class in edu.monash.fit2099.engine.positions">GameMap</a>&nbsp;map,
-<a href="../displays/Display.html" title="class in edu.monash.fit2099.engine.displays">Display</a>&nbsp;display)</span></div>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="../actions/Action.html" title="class in engine.actions">Action</a></span>&nbsp;<span class="member-name">playTurn</span>&#8203;(<span class="parameters"><a href="../actions/ActionList.html" title="class in engine.actions">ActionList</a>&nbsp;actions,
+<a href="../actions/Action.html" title="class in engine.actions">Action</a>&nbsp;lastAction,
+<a href="../positions/GameMap.html" title="class in engine.positions">GameMap</a>&nbsp;map,
+<a href="../displays/Display.html" title="class in engine.displays">Display</a>&nbsp;display)</span></div>
 <div class="block">Select and return an action to perform on the current turn.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -681,9 +681,9 @@ int&nbsp;value)</span>
 <li>
 <section class="detail" id="allowableActions(edu.monash.fit2099.engine.actors.Actor,java.lang.String,edu.monash.fit2099.engine.positions.GameMap)">
 <h3>allowableActions</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../actions/ActionList.html" title="class in edu.monash.fit2099.engine.actions">ActionList</a></span>&nbsp;<span class="member-name">allowableActions</span>&#8203;(<span class="parameters"><a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;otherActor,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../actions/ActionList.html" title="class in engine.actions">ActionList</a></span>&nbsp;<span class="member-name">allowableActions</span>&#8203;(<span class="parameters"><a href="Actor.html" title="class in engine.actors">Actor</a>&nbsp;otherActor,
 java.lang.String&nbsp;direction,
-<a href="../positions/GameMap.html" title="class in edu.monash.fit2099.engine.positions">GameMap</a>&nbsp;map)</span></div>
+<a href="../positions/GameMap.html" title="class in engine.positions">GameMap</a>&nbsp;map)</span></div>
 <div class="block">Returns a new collection of the Actions that the otherActor can do to the current Actor.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -713,8 +713,8 @@ java.lang.String&nbsp;direction,
 <li>
 <section class="detail" id="unconscious(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">
 <h3>unconscious</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">unconscious</span>&#8203;(<span class="parameters"><a href="Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor,
-<a href="../positions/GameMap.html" title="class in edu.monash.fit2099.engine.positions">GameMap</a>&nbsp;map)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">unconscious</span>&#8203;(<span class="parameters"><a href="Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor,
+<a href="../positions/GameMap.html" title="class in engine.positions">GameMap</a>&nbsp;map)</span></div>
 <div class="block">Method that can be executed when the actor is unconscious due to the action of another actor</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -728,7 +728,7 @@ java.lang.String&nbsp;direction,
 <li>
 <section class="detail" id="unconscious(edu.monash.fit2099.engine.positions.GameMap)">
 <h3>unconscious</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">unconscious</span>&#8203;(<span class="parameters"><a href="../positions/GameMap.html" title="class in edu.monash.fit2099.engine.positions">GameMap</a>&nbsp;map)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">unconscious</span>&#8203;(<span class="parameters"><a href="../positions/GameMap.html" title="class in engine.positions">GameMap</a>&nbsp;map)</span></div>
 <div class="block">Method that can be executed when the actor is unconscious due to natural causes or accident
  For example, the actor is unconscious due to them falling into a deep well.</div>
 <dl class="notes">
@@ -764,7 +764,7 @@ java.lang.String&nbsp;direction,
 <li>
 <section class="detail" id="getIntrinsicWeapon()">
 <h3>getIntrinsicWeapon</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../weapons/IntrinsicWeapon.html" title="class in edu.monash.fit2099.engine.weapons">IntrinsicWeapon</a></span>&nbsp;<span class="member-name">getIntrinsicWeapon</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../weapons/IntrinsicWeapon.html" title="class in engine.weapons">IntrinsicWeapon</a></span>&nbsp;<span class="member-name">getIntrinsicWeapon</span>()</div>
 <div class="block">Creates and returns an intrinsic weapon.
  Override this method to create an intrinsic weapon for
  the current Actor with more interesting descriptions and/or different damage.</div>
@@ -782,7 +782,7 @@ java.lang.String&nbsp;direction,
  It will also return true if any of the items that the actor is carrying has the required capability.</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code><a href="../GameEntity.html#hasCapability(java.lang.Enum)">hasCapability</a></code>&nbsp;in class&nbsp;<code><a href="../GameEntity.html" title="class in edu.monash.fit2099.engine">GameEntity</a></code></dd>
+<dd><code><a href="../GameEntity.html#hasCapability(java.lang.Enum)">hasCapability</a></code>&nbsp;in class&nbsp;<code><a href="../GameEntity.html" title="class in engine">GameEntity</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>capability</code> - the capability required</dd>
 <dt>Returns:</dt>

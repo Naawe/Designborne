@@ -82,12 +82,12 @@ loadScripts(document, 'script');</script>
 <section class="description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code>edu.monash.fit2099.engine.actors.Behaviour</code></dd>
+<dd><code>engine.actors.Behaviour</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="type-name-label">FollowBehavior</span>
 extends java.lang.Object
-implements edu.monash.fit2099.engine.actors.Behaviour</pre>
+implements engine.actors.Behaviour</pre>
 <div class="block">Follow Behaviour is implemented in Ancient woods enemies and returns a move action that moves the actor towards its target.
 
  Created by:</div>
@@ -118,7 +118,7 @@ implements edu.monash.fit2099.engine.actors.Behaviour</pre>
 </thead>
 <tbody>
 <tr class="alt-color">
-<th class="col-constructor-name" scope="row"><code><span class="member-name-link"><a href="#%3Cinit%3E(edu.monash.fit2099.engine.actors.Actor)">FollowBehavior</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;actor)</code></th>
+<th class="col-constructor-name" scope="row"><code><span class="member-name-link"><a href="#%3Cinit%3E(edu.monash.fit2099.engine.actors.Actor)">FollowBehavior</a></span>&#8203;(engine.actors.Actor&nbsp;actor)</code></th>
 <td class="col-last">
 <div class="block">Sets the target in the constructor.</div>
 </td>
@@ -145,9 +145,9 @@ implements edu.monash.fit2099.engine.actors.Behaviour</pre>
 </thead>
 <tbody>
 <tr class="alt-color" id="i0">
-<td class="col-first"><code>edu.monash.fit2099.engine.actions.Action</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#getAction(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">getAction</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
-edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></th>
+<td class="col-first"><code>engine.actions.Action</code></td>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#getAction(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">getAction</a></span>&#8203;(engine.actors.Actor&nbsp;actor,
+engine.positions.GameMap&nbsp;map)</code></th>
 <td class="col-last">
 <div class="block">Finds the closest position to the target, then returns a move action for that square.</div>
 </td>
@@ -173,7 +173,7 @@ edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></th>
 <li>
 <section class="detail" id="&lt;init&gt;(edu.monash.fit2099.engine.actors.Actor)">
 <h3>FollowBehavior</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="member-name">FollowBehavior</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;actor)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="member-name">FollowBehavior</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;actor)</span></div>
 <div class="block">Sets the target in the constructor.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -192,12 +192,12 @@ edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></th>
 <li>
 <section class="detail" id="getAction(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">
 <h3>getAction</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">edu.monash.fit2099.engine.actions.Action</span>&nbsp;<span class="member-name">getAction</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
-edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">engine.actions.Action</span>&nbsp;<span class="member-name">getAction</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;actor,
+engine.positions.GameMap&nbsp;map)</span></div>
 <div class="block">Finds the closest position to the target, then returns a move action for that square.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code>getAction</code>&nbsp;in interface&nbsp;<code>edu.monash.fit2099.engine.actors.Behaviour</code></dd>
+<dd><code>getAction</code>&nbsp;in interface&nbsp;<code>engine.actors.Behaviour</code></dd>
 <dt>Parameters:</dt>
 <dd><code>actor</code> - The Actor with the behaviour</dd>
 <dd><code>map</code> - the GameMap containing the Actor</dd>

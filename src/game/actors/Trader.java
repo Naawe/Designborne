@@ -1,6 +1,6 @@
 package game.actors;
 
-import edu.monash.fit2099.engine.actors.Actor;
+import engine.actors.Actor;
 import game.general.Ability;
 
 /**

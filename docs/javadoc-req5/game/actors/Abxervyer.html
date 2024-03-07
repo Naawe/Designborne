@@ -72,8 +72,8 @@ loadScripts(document, 'script');</script>
 <h1 title="Class Abxervyer" class="title">Class Abxervyer</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
-<div class="inheritance">edu.monash.fit2099.engine.GameEntity
-<div class="inheritance">edu.monash.fit2099.engine.actors.Actor
+<div class="inheritance">engine.GameEntity
+<div class="inheritance">engine.actors.Actor
 <div class="inheritance">game.actors.EnemyActor
 <div class="inheritance">game.actors.Abxervyer</div>
 </div>
@@ -83,7 +83,7 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code>edu.monash.fit2099.engine.displays.Printable</code></dd>
+<dd><code>engine.displays.Printable</code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Abxervyer</span>
@@ -100,10 +100,10 @@ loadScripts(document, 'script');</script>
 <h3 id="fields-inherited-from-class-game.actors.EnemyActor">Fields inherited from class&nbsp;game.actors.EnemyActor</h3>
 <code>behaviours, OFFSET_VALUE, target</code></div>
 <div class="inherited-list">
-<h3 id="fields-inherited-from-class-edu.monash.fit2099.engine.actors.Actor">Fields inherited from class&nbsp;edu.monash.fit2099.engine.actors.Actor</h3>
+<h3 id="fields-inherited-from-class-edu.monash.fit2099.engine.actors.Actor">Fields inherited from class&nbsp;engine.actors.Actor</h3>
 <code>name</code></div>
 <div class="inherited-list">
-<h3 id="fields-inherited-from-class-edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="fields-inherited-from-class-edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;engine.GameEntity</h3>
 <code>capabilitySet</code></div>
 </section>
 </li>
@@ -132,12 +132,12 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addBattleGameMap(edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">addBattleGameMap</a><wbr>(edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addBattleGameMap(edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">addBattleGameMap</a><wbr>(engine.positions.GameMap&nbsp;map)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Adds battle game map.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addLeaveGameMap(edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">addLeaveGameMap</a><wbr>(edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addLeaveGameMap(edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">addLeaveGameMap</a><wbr>(engine.positions.GameMap&nbsp;map)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Adds a GameMap to the list of leave GameMap</div>
 </div>
@@ -146,29 +146,29 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Adds a map to the weather map</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>edu.monash.fit2099.engine.actions.ActionList</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor,java.lang.String,edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">allowableActions</a><wbr>(edu.monash.fit2099.engine.actors.Actor&nbsp;otherActor,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>engine.actions.ActionList</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor,java.lang.String,edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">allowableActions</a><wbr>(engine.actors.Actor&nbsp;otherActor,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;direction,
- edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></div>
+ engine.positions.GameMap&nbsp;map)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">get actions other actor can perform on it</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>edu.monash.fit2099.engine.weapons.IntrinsicWeapon</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>engine.weapons.IntrinsicWeapon</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getIntrinsicWeapon()" class="member-name-link">getIntrinsicWeapon</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns a damage weapon that is capable of attacking.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>edu.monash.fit2099.engine.actions.Action</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#playTurn(edu.monash.fit2099.engine.actions.ActionList,edu.monash.fit2099.engine.actions.Action,edu.monash.fit2099.engine.positions.GameMap,edu.monash.fit2099.engine.displays.Display)" class="member-name-link">playTurn</a><wbr>(edu.monash.fit2099.engine.actions.ActionList&nbsp;actions,
- edu.monash.fit2099.engine.actions.Action&nbsp;lastAction,
- edu.monash.fit2099.engine.positions.GameMap&nbsp;map,
- edu.monash.fit2099.engine.displays.Display&nbsp;display)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>engine.actions.Action</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#playTurn(edu.monash.fit2099.engine.actions.ActionList,edu.monash.fit2099.engine.actions.Action,edu.monash.fit2099.engine.positions.GameMap,edu.monash.fit2099.engine.displays.Display)" class="member-name-link">playTurn</a><wbr>(engine.actions.ActionList&nbsp;actions,
+ engine.actions.Action&nbsp;lastAction,
+ engine.positions.GameMap&nbsp;map,
+ engine.displays.Display&nbsp;display)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Called when the player presses one of the turn buttons.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#unconscious(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">unconscious</a><wbr>(edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
- edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#unconscious(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">unconscious</a><wbr>(engine.actors.Actor&nbsp;actor,
+ engine.positions.GameMap&nbsp;map)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Once defeated, boss leaves a Gate on where it last standed, drops runes, and print message.</div>
 </div>
@@ -179,10 +179,10 @@ loadScripts(document, 'script');</script>
 <h3 id="methods-inherited-from-class-game.actors.EnemyActor">Methods inherited from class&nbsp;game.actors.EnemyActor</h3>
 <code>addBehavior, getRuneAmount</code></div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-edu.monash.fit2099.engine.actors.Actor">Methods inherited from class&nbsp;edu.monash.fit2099.engine.actors.Actor</h3>
+<h3 id="methods-inherited-from-class-edu.monash.fit2099.engine.actors.Actor">Methods inherited from class&nbsp;engine.actors.Actor</h3>
 <code>addAttribute, addBalance, addItemToInventory, deductBalance, getAttribute, getAttributeMaximum, getBalance, getDisplayChar, getItemInventory, hasAttribute, hasCapability, heal, hurt, increaseDamageMultiplier, isConscious, modifyAttribute, modifyAttributeMaximum, removeItemFromInventory, setDisplayChar, toString, unconscious, updateDamageMultiplier</code></div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="methods-inherited-from-class-edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;engine.GameEntity</h3>
 <code>addCapability, capabilitiesList, findCapabilitiesByType, removeCapability</code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
@@ -215,11 +215,11 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="getIntrinsicWeapon()">
 <h3>getIntrinsicWeapon</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">edu.monash.fit2099.engine.weapons.IntrinsicWeapon</span>&nbsp;<span class="element-name">getIntrinsicWeapon</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">engine.weapons.IntrinsicWeapon</span>&nbsp;<span class="element-name">getIntrinsicWeapon</span>()</div>
 <div class="block">Returns a damage weapon that is capable of attacking.</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code>getIntrinsicWeapon</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.actors.Actor</code></dd>
+<dd><code>getIntrinsicWeapon</code>&nbsp;in class&nbsp;<code>engine.actors.Actor</code></dd>
 <dt>Returns:</dt>
 <dd>an IntrinsicWeapon that is capable of attacking</dd>
 </dl>
@@ -228,10 +228,10 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="playTurn(edu.monash.fit2099.engine.actions.ActionList,edu.monash.fit2099.engine.actions.Action,edu.monash.fit2099.engine.positions.GameMap,edu.monash.fit2099.engine.displays.Display)">
 <h3>playTurn</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">edu.monash.fit2099.engine.actions.Action</span>&nbsp;<span class="element-name">playTurn</span><wbr><span class="parameters">(edu.monash.fit2099.engine.actions.ActionList&nbsp;actions,
- edu.monash.fit2099.engine.actions.Action&nbsp;lastAction,
- edu.monash.fit2099.engine.positions.GameMap&nbsp;map,
- edu.monash.fit2099.engine.displays.Display&nbsp;display)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">engine.actions.Action</span>&nbsp;<span class="element-name">playTurn</span><wbr><span class="parameters">(engine.actions.ActionList&nbsp;actions,
+ engine.actions.Action&nbsp;lastAction,
+ engine.positions.GameMap&nbsp;map,
+ engine.displays.Display&nbsp;display)</span></div>
 <div class="block">Called when the player presses one of the turn buttons.</div>
 <dl class="notes">
 <dt>Overrides:</dt>
@@ -260,7 +260,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="addBattleGameMap(edu.monash.fit2099.engine.positions.GameMap)">
 <h3>addBattleGameMap</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addBattleGameMap</span><wbr><span class="parameters">(edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addBattleGameMap</span><wbr><span class="parameters">(engine.positions.GameMap&nbsp;map)</span></div>
 <div class="block">Adds battle game map.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -271,7 +271,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="addLeaveGameMap(edu.monash.fit2099.engine.positions.GameMap)">
 <h3>addLeaveGameMap</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addLeaveGameMap</span><wbr><span class="parameters">(edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addLeaveGameMap</span><wbr><span class="parameters">(engine.positions.GameMap&nbsp;map)</span></div>
 <div class="block">Adds a GameMap to the list of leave GameMap</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -282,9 +282,9 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="allowableActions(edu.monash.fit2099.engine.actors.Actor,java.lang.String,edu.monash.fit2099.engine.positions.GameMap)">
 <h3>allowableActions</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">edu.monash.fit2099.engine.actions.ActionList</span>&nbsp;<span class="element-name">allowableActions</span><wbr><span class="parameters">(edu.monash.fit2099.engine.actors.Actor&nbsp;otherActor,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">engine.actions.ActionList</span>&nbsp;<span class="element-name">allowableActions</span><wbr><span class="parameters">(engine.actors.Actor&nbsp;otherActor,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;direction,
- edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</span></div>
+ engine.positions.GameMap&nbsp;map)</span></div>
 <div class="block">get actions other actor can perform on it</div>
 <dl class="notes">
 <dt>Overrides:</dt>
@@ -301,8 +301,8 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="unconscious(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">
 <h3>unconscious</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">unconscious</span><wbr><span class="parameters">(edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
- edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">unconscious</span><wbr><span class="parameters">(engine.actors.Actor&nbsp;actor,
+ engine.positions.GameMap&nbsp;map)</span></div>
 <div class="block">Once defeated, boss leaves a Gate on where it last standed, drops runes, and print message.</div>
 <dl class="notes">
 <dt>Overrides:</dt>

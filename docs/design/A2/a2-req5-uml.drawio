@@ -246,7 +246,7 @@
         <mxCell id="cG1cPqBJCj5mjhicXPr7-74" value="game.actor" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="10" y="-242" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cG1cPqBJCj5mjhicXPr7-77" value="edu.monash.fit2099.engine.positions." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="cG1cPqBJCj5mjhicXPr7-77" value="engine.positions." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="507.5" y="-122" width="220" height="30" as="geometry" />
         </mxCell>
         <mxCell id="cG1cPqBJCj5mjhicXPr7-79" value="game.extended" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">

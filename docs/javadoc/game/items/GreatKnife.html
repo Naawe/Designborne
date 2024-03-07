@@ -77,9 +77,9 @@ loadScripts(document, 'script');</script>
 <h1 title="Class GreatKnife" class="title">Class GreatKnife</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
-<div class="inheritance">edu.monash.fit2099.engine.GameEntity
-<div class="inheritance">edu.monash.fit2099.engine.items.Item
-<div class="inheritance">edu.monash.fit2099.engine.weapons.WeaponItem
+<div class="inheritance">engine.GameEntity
+<div class="inheritance">engine.items.Item
+<div class="inheritance">engine.weapons.WeaponItem
 <div class="inheritance">game.items.GreatKnife</div>
 </div>
 </div>
@@ -88,11 +88,11 @@ loadScripts(document, 'script');</script>
 <section class="description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code>edu.monash.fit2099.engine.displays.Printable</code>, <code>edu.monash.fit2099.engine.weapons.Weapon</code>, <code><a href="Buyable.html" title="interface in game.items">Buyable</a></code>, <code><a href="Sellable.html" title="interface in game.items">Sellable</a></code>, <code><a href="Upgradable.html" title="interface in game.items">Upgradable</a></code></dd>
+<dd><code>engine.displays.Printable</code>, <code>engine.weapons.Weapon</code>, <code><a href="Buyable.html" title="interface in game.items">Buyable</a></code>, <code><a href="Sellable.html" title="interface in game.items">Sellable</a></code>, <code><a href="Upgradable.html" title="interface in game.items">Upgradable</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="type-name-label">GreatKnife</span>
-extends edu.monash.fit2099.engine.weapons.WeaponItem
+extends engine.weapons.WeaponItem
 implements <a href="Sellable.html" title="interface in game.items">Sellable</a>, <a href="Buyable.html" title="interface in game.items">Buyable</a>, <a href="Upgradable.html" title="interface in game.items">Upgradable</a></pre>
 <div class="block">A class that represents the Great Knife.
  Created by:</div>
@@ -114,10 +114,10 @@ implements <a href="Sellable.html" title="interface in game.items">Sellable</a>,
 <section class="field-summary" id="field.summary">
 <h2>Field Summary</h2>
 <div class="inherited-list">
-<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.items.Item">Fields inherited from class&nbsp;edu.monash.fit2099.engine.items.Item</h3>
+<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.items.Item">Fields inherited from class&nbsp;engine.items.Item</h3>
 <code>portable</code></div>
 <div class="inherited-list">
-<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;engine.GameEntity</h3>
 <code>capabilitySet</code></div>
 </section>
 </li>
@@ -163,16 +163,16 @@ implements <a href="Sellable.html" title="interface in game.items">Sellable</a>,
 </thead>
 <tbody>
 <tr class="alt-color" id="i0">
-<td class="col-first"><code>edu.monash.fit2099.engine.actions.ActionList</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location)">allowableActions</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;target,
-edu.monash.fit2099.engine.positions.Location&nbsp;location)</code></th>
+<td class="col-first"><code>engine.actions.ActionList</code></td>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location)">allowableActions</a></span>&#8203;(engine.actors.Actor&nbsp;target,
+engine.positions.Location&nbsp;location)</code></th>
 <td class="col-last">
 <div class="block">Gives the actions that can be performed using the Great Knife.</div>
 </td>
 </tr>
 <tr class="row-color" id="i1">
 <td class="col-first"><code>java.lang.String</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#buy(edu.monash.fit2099.engine.actors.Actor,int)">buy</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#buy(edu.monash.fit2099.engine.actors.Actor,int)">buy</a></span>&#8203;(engine.actors.Actor&nbsp;actor,
 int&nbsp;buyingAmount)</code></th>
 <td class="col-last">
 <div class="block">Allows an actor to buy the Great Knife from another actor.</div>
@@ -180,7 +180,7 @@ int&nbsp;buyingAmount)</code></th>
 </tr>
 <tr class="alt-color" id="i2">
 <td class="col-first"><code>java.lang.String</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#sell(edu.monash.fit2099.engine.actors.Actor,int)">sell</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#sell(edu.monash.fit2099.engine.actors.Actor,int)">sell</a></span>&#8203;(engine.actors.Actor&nbsp;actor,
 int&nbsp;sellingAmount)</code></th>
 <td class="col-last">
 <div class="block">Allows an actor to sell the Great Knife to another actor that can trade.</div>
@@ -188,7 +188,7 @@ int&nbsp;sellingAmount)</code></th>
 </tr>
 <tr class="row-color" id="i3">
 <td class="col-first"><code>java.lang.String</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#upgrade(edu.monash.fit2099.engine.actors.Actor,int)">upgrade</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#upgrade(edu.monash.fit2099.engine.actors.Actor,int)">upgrade</a></span>&#8203;(engine.actors.Actor&nbsp;actor,
 int&nbsp;upgradeAmount)</code></th>
 <td class="col-last">
 <div class="block">Allows an actor to upgrade the Great Knife.</div>
@@ -199,13 +199,13 @@ int&nbsp;upgradeAmount)</code></th>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.weapons.WeaponItem">Methods inherited from class&nbsp;edu.monash.fit2099.engine.weapons.WeaponItem</h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.weapons.WeaponItem">Methods inherited from class&nbsp;engine.weapons.WeaponItem</h3>
 <code>chanceToHit, damage, increaseDamageMultiplier, increaseHitRate, updateDamageMultiplier, updateHitRate, verb</code></div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.items.Item">Methods inherited from class&nbsp;edu.monash.fit2099.engine.items.Item</h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.items.Item">Methods inherited from class&nbsp;engine.items.Item</h3>
 <code>allowableActions, allowableActions, getDisplayChar, getDropAction, getPickUpAction, setDisplayChar, tick, tick, togglePortability, toString</code></div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;engine.GameEntity</h3>
 <code>addCapability, capabilitiesList, findCapabilitiesByType, hasCapability, removeCapability</code></div>
 <div class="inherited-list">
 <h3 id="methods.inherited.from.class.java.lang.Object">Methods inherited from class&nbsp;java.lang.Object</h3>
@@ -239,12 +239,12 @@ int&nbsp;upgradeAmount)</code></th>
 <li>
 <section class="detail" id="allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location)">
 <h3>allowableActions</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">edu.monash.fit2099.engine.actions.ActionList</span>&nbsp;<span class="member-name">allowableActions</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;target,
-edu.monash.fit2099.engine.positions.Location&nbsp;location)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">engine.actions.ActionList</span>&nbsp;<span class="member-name">allowableActions</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;target,
+engine.positions.Location&nbsp;location)</span></div>
 <div class="block">Gives the actions that can be performed using the Great Knife.</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code>allowableActions</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.items.Item</code></dd>
+<dd><code>allowableActions</code>&nbsp;in class&nbsp;<code>engine.items.Item</code></dd>
 <dt>Parameters:</dt>
 <dd><code>target</code> - The target actor to attack.</dd>
 <dd><code>location</code> - The location where the attack action occurs.</dd>
@@ -256,7 +256,7 @@ edu.monash.fit2099.engine.positions.Location&nbsp;location)</span></div>
 <li>
 <section class="detail" id="buy(edu.monash.fit2099.engine.actors.Actor,int)">
 <h3>buy</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">buy</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">buy</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;actor,
 int&nbsp;buyingAmount)</span></div>
 <div class="block">Allows an actor to buy the Great Knife from another actor.</div>
 <dl class="notes">
@@ -273,7 +273,7 @@ int&nbsp;buyingAmount)</span></div>
 <li>
 <section class="detail" id="sell(edu.monash.fit2099.engine.actors.Actor,int)">
 <h3>sell</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">sell</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">sell</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;actor,
 int&nbsp;sellingAmount)</span></div>
 <div class="block">Allows an actor to sell the Great Knife to another actor that can trade.</div>
 <dl class="notes">
@@ -290,7 +290,7 @@ int&nbsp;sellingAmount)</span></div>
 <li>
 <section class="detail" id="upgrade(edu.monash.fit2099.engine.actors.Actor,int)">
 <h3>upgrade</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">upgrade</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">upgrade</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;actor,
 int&nbsp;upgradeAmount)</span></div>
 <div class="block">Allows an actor to upgrade the Great Knife.</div>
 <dl class="notes">

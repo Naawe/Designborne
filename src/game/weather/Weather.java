@@ -1,6 +1,6 @@
 package game.weather;
 
-import edu.monash.fit2099.engine.positions.GameMap;
+import engine.positions.GameMap;
 
 /**
 * interface for Execute effects related to this weather

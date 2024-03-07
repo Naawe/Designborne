@@ -77,8 +77,8 @@ loadScripts(document, 'script');</script>
 <h1 title="Class HollowSoldier" class="title">Class HollowSoldier</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
-<div class="inheritance">edu.monash.fit2099.engine.GameEntity
-<div class="inheritance">edu.monash.fit2099.engine.actors.Actor
+<div class="inheritance">engine.GameEntity
+<div class="inheritance">engine.actors.Actor
 <div class="inheritance"><a href="EnemyActor.html" title="class in game.actors">game.actors.EnemyActor</a>
 <div class="inheritance">game.actors.HollowSoldier</div>
 </div>
@@ -88,7 +88,7 @@ loadScripts(document, 'script');</script>
 <section class="description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code>edu.monash.fit2099.engine.displays.Printable</code></dd>
+<dd><code>engine.displays.Printable</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="type-name-label">HollowSoldier</span>
@@ -114,10 +114,10 @@ extends <a href="EnemyActor.html" title="class in game.actors">EnemyActor</a></p
 <h3 id="fields.inherited.from.class.game.actors.EnemyActor">Fields inherited from class&nbsp;game.actors.<a href="EnemyActor.html" title="class in game.actors">EnemyActor</a></h3>
 <code><a href="EnemyActor.html#ATTACK_BEHAVIOUR_PRIORITY">ATTACK_BEHAVIOUR_PRIORITY</a>, <a href="EnemyActor.html#behaviours">behaviours</a>, <a href="EnemyActor.html#FOLLOW_BEHAVIOUR_PRIORITY">FOLLOW_BEHAVIOUR_PRIORITY</a>, <a href="EnemyActor.html#RUNE_DROP_CHANCE">RUNE_DROP_CHANCE</a>, <a href="EnemyActor.html#runeAmount">runeAmount</a>, <a href="EnemyActor.html#target">target</a>, <a href="EnemyActor.html#WANDER_BEHAVIOUR_PRIORITY">WANDER_BEHAVIOUR_PRIORITY</a></code></div>
 <div class="inherited-list">
-<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.actors.Actor">Fields inherited from class&nbsp;edu.monash.fit2099.engine.actors.Actor</h3>
+<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.actors.Actor">Fields inherited from class&nbsp;engine.actors.Actor</h3>
 <code>name</code></div>
 <div class="inherited-list">
-<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;engine.GameEntity</h3>
 <code>capabilitySet</code></div>
 </section>
 </li>
@@ -163,7 +163,7 @@ extends <a href="EnemyActor.html" title="class in game.actors">EnemyActor</a></p
 </thead>
 <tbody>
 <tr class="alt-color" id="i0">
-<td class="col-first"><code>edu.monash.fit2099.engine.weapons.IntrinsicWeapon</code></td>
+<td class="col-first"><code>engine.weapons.IntrinsicWeapon</code></td>
 <th class="col-second" scope="row"><code><span class="member-name-link"><a href="#getIntrinsicWeapon()">getIntrinsicWeapon</a></span>()</code></th>
 <td class="col-last">
 <div class="block">sets intrinsic weapon</div>
@@ -171,8 +171,8 @@ extends <a href="EnemyActor.html" title="class in game.actors">EnemyActor</a></p
 </tr>
 <tr class="row-color" id="i1">
 <td class="col-first"><code>java.lang.String</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#unconscious(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">unconscious</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
-edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#unconscious(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">unconscious</a></span>&#8203;(engine.actors.Actor&nbsp;actor,
+engine.positions.GameMap&nbsp;map)</code></th>
 <td class="col-last">
 <div class="block">drops any necessary items removes the actor from the map and returns a string of those events</div>
 </td>
@@ -185,10 +185,10 @@ edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></th>
 <h3 id="methods.inherited.from.class.game.actors.EnemyActor">Methods inherited from class&nbsp;game.actors.<a href="EnemyActor.html" title="class in game.actors">EnemyActor</a></h3>
 <code><a href="EnemyActor.html#addBehavior(int,edu.monash.fit2099.engine.actors.Behaviour)">addBehavior</a>, <a href="EnemyActor.html#allowableActions(edu.monash.fit2099.engine.actors.Actor,java.lang.String,edu.monash.fit2099.engine.positions.GameMap)">allowableActions</a>, <a href="EnemyActor.html#drop(edu.monash.fit2099.engine.positions.Location,edu.monash.fit2099.engine.items.Item,float)">drop</a>, <a href="EnemyActor.html#playTurn(edu.monash.fit2099.engine.actions.ActionList,edu.monash.fit2099.engine.actions.Action,edu.monash.fit2099.engine.positions.GameMap,edu.monash.fit2099.engine.displays.Display)">playTurn</a></code></div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.actors.Actor">Methods inherited from class&nbsp;edu.monash.fit2099.engine.actors.Actor</h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.actors.Actor">Methods inherited from class&nbsp;engine.actors.Actor</h3>
 <code>addAttribute, addBalance, addItemToInventory, deductBalance, getAttribute, getAttributeMaximum, getBalance, getDisplayChar, getItemInventory, hasAttribute, hasCapability, heal, hurt, increaseDamageMultiplier, isConscious, modifyAttribute, modifyAttributeMaximum, removeItemFromInventory, setDisplayChar, toString, unconscious, updateDamageMultiplier</code></div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;engine.GameEntity</h3>
 <code>addCapability, capabilitiesList, findCapabilitiesByType, removeCapability</code></div>
 <div class="inherited-list">
 <h3 id="methods.inherited.from.class.java.lang.Object">Methods inherited from class&nbsp;java.lang.Object</h3>
@@ -222,11 +222,11 @@ edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></th>
 <li>
 <section class="detail" id="getIntrinsicWeapon()">
 <h3>getIntrinsicWeapon</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">edu.monash.fit2099.engine.weapons.IntrinsicWeapon</span>&nbsp;<span class="member-name">getIntrinsicWeapon</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">engine.weapons.IntrinsicWeapon</span>&nbsp;<span class="member-name">getIntrinsicWeapon</span>()</div>
 <div class="block">sets intrinsic weapon</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code>getIntrinsicWeapon</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.actors.Actor</code></dd>
+<dd><code>getIntrinsicWeapon</code>&nbsp;in class&nbsp;<code>engine.actors.Actor</code></dd>
 <dt>Returns:</dt>
 <dd>returns an Intrinsic weapon item for the class</dd>
 </dl>
@@ -235,12 +235,12 @@ edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></th>
 <li>
 <section class="detail" id="unconscious(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">
 <h3>unconscious</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">unconscious</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
-edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">unconscious</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;actor,
+engine.positions.GameMap&nbsp;map)</span></div>
 <div class="block">drops any necessary items removes the actor from the map and returns a string of those events</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code>unconscious</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.actors.Actor</code></dd>
+<dd><code>unconscious</code>&nbsp;in class&nbsp;<code>engine.actors.Actor</code></dd>
 <dt>Parameters:</dt>
 <dd><code>actor</code> - the perpetrator</dd>
 <dd><code>map</code> - where the actor fell unconscious</dd>

@@ -1,8 +1,8 @@
 package game.actors;
 
-import edu.monash.fit2099.engine.actors.attributes.ActorAttributeOperations;
-import edu.monash.fit2099.engine.actors.attributes.BaseActorAttributes;
-import edu.monash.fit2099.engine.displays.Display;
+import engine.actors.attributes.ActorAttributeOperations;
+import engine.actors.attributes.BaseActorAttributes;
+import engine.displays.Display;
 
 /**
  * Class for the Boss enemy

@@ -6,7 +6,7 @@
 <title>BaseActorAttribute</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="dc.created" content="2023-10-06">
-<meta name="description" content="declaration: package: edu.monash.fit2099.engine.actors.attributes, class: BaseActorAttribute">
+<meta name="description" content="declaration: package: engine.actors.attributes, class: BaseActorAttribute">
 <meta name="generator" content="javadoc/ClassWriterImpl">
 <link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
 <link rel="stylesheet" type="text/css" href="../../../../../../script-dir/jquery-ui.min.css" title="Style">
@@ -73,21 +73,21 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">edu.monash.fit2099.engine.actors.attributes</a></div>
+<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">engine.actors.attributes</a></div>
 <h1 title="Class BaseActorAttribute" class="title">Class BaseActorAttribute</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
-<div class="inheritance">edu.monash.fit2099.engine.actors.attributes.BaseActorAttribute</div>
+<div class="inheritance">engine.actors.attributes.BaseActorAttribute</div>
 </div>
 <section class="description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="ActorAttribute.html" title="interface in edu.monash.fit2099.engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
+<dd><code><a href="ActorAttribute.html" title="interface in engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="type-name-label">BaseActorAttribute</span>
 extends java.lang.Object
-implements <a href="ActorAttribute.html" title="interface in edu.monash.fit2099.engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</pre>
+implements <a href="ActorAttribute.html" title="interface in engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</pre>
 <div class="block">A class that represents a basic attribute of an actor, such as health.</div>
 </section>
 <section class="summary">
@@ -234,7 +234,7 @@ implements <a href="ActorAttribute.html" title="interface in edu.monash.fit2099.
  Sets the current points to either the given points or the maximum points, whichever is lesser.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="ActorAttribute.html#update(T)">update</a></code>&nbsp;in interface&nbsp;<code><a href="ActorAttribute.html" title="interface in edu.monash.fit2099.engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
+<dd><code><a href="ActorAttribute.html#update(T)">update</a></code>&nbsp;in interface&nbsp;<code><a href="ActorAttribute.html" title="interface in engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
 <dt>Parameters:</dt>
 <dd><code>points</code> - the points to overwrite the current points of the attribute</dd>
 </dl>
@@ -248,7 +248,7 @@ implements <a href="ActorAttribute.html" title="interface in edu.monash.fit2099.
  It ensures that the new points do not exceed the maximum points by taking either the new points or the maximum points, whichever is lesser.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="ActorAttribute.html#increase(T)">increase</a></code>&nbsp;in interface&nbsp;<code><a href="ActorAttribute.html" title="interface in edu.monash.fit2099.engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
+<dd><code><a href="ActorAttribute.html#increase(T)">increase</a></code>&nbsp;in interface&nbsp;<code><a href="ActorAttribute.html" title="interface in engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
 <dt>Parameters:</dt>
 <dd><code>points</code> - the points to increase the current points of the attribute</dd>
 </dl>
@@ -263,7 +263,7 @@ implements <a href="ActorAttribute.html" title="interface in edu.monash.fit2099.
  For example, the stamina (another example of a basic attribute) of the actor cannot be a negative value</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="ActorAttribute.html#decrease(T)">decrease</a></code>&nbsp;in interface&nbsp;<code><a href="ActorAttribute.html" title="interface in edu.monash.fit2099.engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
+<dd><code><a href="ActorAttribute.html#decrease(T)">decrease</a></code>&nbsp;in interface&nbsp;<code><a href="ActorAttribute.html" title="interface in engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
 <dt>Parameters:</dt>
 <dd><code>points</code> - the points to decrease the current points of the attribute</dd>
 </dl>
@@ -276,7 +276,7 @@ implements <a href="ActorAttribute.html" title="interface in edu.monash.fit2099.
 <div class="block">Getter for the current points of the attribute.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="ActorAttribute.html#get()">get</a></code>&nbsp;in interface&nbsp;<code><a href="ActorAttribute.html" title="interface in edu.monash.fit2099.engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
+<dd><code><a href="ActorAttribute.html#get()">get</a></code>&nbsp;in interface&nbsp;<code><a href="ActorAttribute.html" title="interface in engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
 <dt>Returns:</dt>
 <dd>the current points of the attribute</dd>
 </dl>
@@ -289,7 +289,7 @@ implements <a href="ActorAttribute.html" title="interface in edu.monash.fit2099.
 <div class="block">Getter for the maximum points of the attribute.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="ActorAttribute.html#getMaximum()">getMaximum</a></code>&nbsp;in interface&nbsp;<code><a href="ActorAttribute.html" title="interface in edu.monash.fit2099.engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
+<dd><code><a href="ActorAttribute.html#getMaximum()">getMaximum</a></code>&nbsp;in interface&nbsp;<code><a href="ActorAttribute.html" title="interface in engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
 <dt>Returns:</dt>
 <dd>the maximum points of the attribute</dd>
 </dl>
@@ -302,7 +302,7 @@ implements <a href="ActorAttribute.html" title="interface in edu.monash.fit2099.
 <div class="block">Overwrites the current maximum points of the attribute with the given points.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="ActorAttribute.html#updateMaximum(T)">updateMaximum</a></code>&nbsp;in interface&nbsp;<code><a href="ActorAttribute.html" title="interface in edu.monash.fit2099.engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
+<dd><code><a href="ActorAttribute.html#updateMaximum(T)">updateMaximum</a></code>&nbsp;in interface&nbsp;<code><a href="ActorAttribute.html" title="interface in engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
 <dt>Parameters:</dt>
 <dd><code>points</code> - the points to overwrite the current maximum points of the attribute</dd>
 </dl>
@@ -316,7 +316,7 @@ implements <a href="ActorAttribute.html" title="interface in edu.monash.fit2099.
  This will add to the existing maximum points of an attribute without overwriting the maximum points.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="ActorAttribute.html#increaseMaximum(T)">increaseMaximum</a></code>&nbsp;in interface&nbsp;<code><a href="ActorAttribute.html" title="interface in edu.monash.fit2099.engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
+<dd><code><a href="ActorAttribute.html#increaseMaximum(T)">increaseMaximum</a></code>&nbsp;in interface&nbsp;<code><a href="ActorAttribute.html" title="interface in engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
 <dt>Parameters:</dt>
 <dd><code>points</code> - the points to increase the current maximum points of the attribute</dd>
 </dl>
@@ -330,7 +330,7 @@ implements <a href="ActorAttribute.html" title="interface in edu.monash.fit2099.
  This will subtract from the existing maximum points of an attribute without overwriting the maximum points.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="ActorAttribute.html#decreaseMaximum(T)">decreaseMaximum</a></code>&nbsp;in interface&nbsp;<code><a href="ActorAttribute.html" title="interface in edu.monash.fit2099.engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
+<dd><code><a href="ActorAttribute.html#decreaseMaximum(T)">decreaseMaximum</a></code>&nbsp;in interface&nbsp;<code><a href="ActorAttribute.html" title="interface in engine.actors.attributes">ActorAttribute</a>&lt;java.lang.Integer&gt;</code></dd>
 <dt>Parameters:</dt>
 <dd><code>points</code> - the points to decrease the current maximum points of the attribute</dd>
 </dl>

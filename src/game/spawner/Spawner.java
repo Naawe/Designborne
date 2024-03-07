@@ -1,6 +1,6 @@
 package game.spawner;
 
-import edu.monash.fit2099.engine.positions.Location;
+import engine.positions.Location;
 
 
 /**

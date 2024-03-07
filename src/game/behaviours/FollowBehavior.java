@@ -1,12 +1,12 @@
 package game.behaviours;
 
-import edu.monash.fit2099.engine.actions.Action;
-import edu.monash.fit2099.engine.actions.MoveActorAction;
-import edu.monash.fit2099.engine.actors.Actor;
-import edu.monash.fit2099.engine.actors.Behaviour;
-import edu.monash.fit2099.engine.positions.Exit;
-import edu.monash.fit2099.engine.positions.GameMap;
-import edu.monash.fit2099.engine.positions.Location;
+import engine.actions.Action;
+import engine.actions.MoveActorAction;
+import engine.actors.Actor;
+import engine.actors.Behaviour;
+import engine.positions.Exit;
+import engine.positions.GameMap;
+import engine.positions.Location;
 
 /**
  * Follow Behaviour is implemented in Ancient woods enemies and returns a move action that moves the actor towards its target.

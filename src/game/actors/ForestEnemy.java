@@ -1,8 +1,8 @@
 package game.actors;
 
-import edu.monash.fit2099.engine.actions.ActionList;
-import edu.monash.fit2099.engine.actors.Actor;
-import edu.monash.fit2099.engine.positions.GameMap;
+import engine.actions.ActionList;
+import engine.actors.Actor;
+import engine.positions.GameMap;
 import game.behaviours.FollowBehavior;
 import game.general.Status;
 

@@ -4,13 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import edu.monash.fit2099.engine.actions.Action;
-import edu.monash.fit2099.engine.actions.ActionList;
-import edu.monash.fit2099.engine.actions.DoNothingAction;
-import edu.monash.fit2099.engine.actors.Actor;
-import edu.monash.fit2099.engine.displays.Display;
-import edu.monash.fit2099.engine.items.Item;
-import edu.monash.fit2099.engine.positions.GameMap;
+import engine.actions.ActionList;
+import engine.actors.Actor;
+import engine.items.Item;
+import engine.positions.GameMap;
 import game.actions.BuyAction;
 import game.actions.Conversation;
 import game.actions.ConversationAction;

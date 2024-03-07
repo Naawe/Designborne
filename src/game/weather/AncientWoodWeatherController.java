@@ -2,8 +2,7 @@ package game.weather;
 
 import java.util.ArrayList;
 
-import edu.monash.fit2099.engine.positions.GameMap;
-import edu.monash.fit2099.engine.positions.Location;
+import engine.positions.GameMap;
 import game.extended.ForestGameMap;
 /**
  * Controller Keep track of play-turn and manage weather switching.

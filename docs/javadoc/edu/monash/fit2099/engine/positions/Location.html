@@ -6,7 +6,7 @@
 <title>Location</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="dc.created" content="2023-10-06">
-<meta name="description" content="declaration: package: edu.monash.fit2099.engine.positions, class: Location">
+<meta name="description" content="declaration: package: engine.positions, class: Location">
 <meta name="generator" content="javadoc/ClassWriterImpl">
 <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
 <link rel="stylesheet" type="text/css" href="../../../../../script-dir/jquery-ui.min.css" title="Style">
@@ -73,16 +73,16 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">edu.monash.fit2099.engine.positions</a></div>
+<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">engine.positions</a></div>
 <h1 title="Class Location" class="title">Class Location</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
-<div class="inheritance">edu.monash.fit2099.engine.positions.Location</div>
+<div class="inheritance">engine.positions.Location</div>
 </div>
 <section class="description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../displays/Printable.html" title="interface in edu.monash.fit2099.engine.displays">Printable</a></code></dd>
+<dd><code><a href="../displays/Printable.html" title="interface in engine.displays">Printable</a></code></dd>
 </dl>
 <dl class="notes">
 <dt>Direct Known Subclasses:</dt>
@@ -91,7 +91,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <pre>public class <span class="type-name-label">Location</span>
 extends java.lang.Object
-implements <a href="../displays/Printable.html" title="interface in edu.monash.fit2099.engine.displays">Printable</a></pre>
+implements <a href="../displays/Printable.html" title="interface in engine.displays">Printable</a></pre>
 <div class="block">Class representing a location in the game map.  This includes keeping track of exits,
  character representation, terrain type, and other game data.</div>
 </section>
@@ -112,7 +112,7 @@ implements <a href="../displays/Printable.html" title="interface in edu.monash.f
 </thead>
 <tbody>
 <tr class="alt-color">
-<th class="col-constructor-name" scope="row"><code><span class="member-name-link"><a href="#%3Cinit%3E(edu.monash.fit2099.engine.positions.GameMap,int,int)">Location</a></span>&#8203;(<a href="GameMap.html" title="class in edu.monash.fit2099.engine.positions">GameMap</a>&nbsp;map,
+<th class="col-constructor-name" scope="row"><code><span class="member-name-link"><a href="#%3Cinit%3E(edu.monash.fit2099.engine.positions.GameMap,int,int)">Location</a></span>&#8203;(<a href="GameMap.html" title="class in engine.positions">GameMap</a>&nbsp;map,
 int&nbsp;x,
 int&nbsp;y)</code></th>
 <td class="col-last">
@@ -142,28 +142,28 @@ int&nbsp;y)</code></th>
 <tbody>
 <tr class="alt-color" id="i0">
 <td class="col-first"><code>void</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#addActor(edu.monash.fit2099.engine.actors.Actor)">addActor</a></span>&#8203;(<a href="../actors/Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#addActor(edu.monash.fit2099.engine.actors.Actor)">addActor</a></span>&#8203;(<a href="../actors/Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor)</code></th>
 <td class="col-last">
 <div class="block">Add an Actor to the Location.</div>
 </td>
 </tr>
 <tr class="row-color" id="i1">
 <td class="col-first"><code>void</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#addExit(edu.monash.fit2099.engine.positions.Exit)">addExit</a></span>&#8203;(<a href="Exit.html" title="class in edu.monash.fit2099.engine.positions">Exit</a>&nbsp;exit)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#addExit(edu.monash.fit2099.engine.positions.Exit)">addExit</a></span>&#8203;(<a href="Exit.html" title="class in engine.positions">Exit</a>&nbsp;exit)</code></th>
 <td class="col-last">
 <div class="block">Add an exit to this Location.</div>
 </td>
 </tr>
 <tr class="alt-color" id="i2">
 <td class="col-first"><code>void</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#addItem(edu.monash.fit2099.engine.items.Item)">addItem</a></span>&#8203;(<a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a>&nbsp;item)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#addItem(edu.monash.fit2099.engine.items.Item)">addItem</a></span>&#8203;(<a href="../items/Item.html" title="class in engine.items">Item</a>&nbsp;item)</code></th>
 <td class="col-last">
 <div class="block">Add an item to this location.</div>
 </td>
 </tr>
 <tr class="row-color" id="i3">
 <td class="col-first"><code>boolean</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#canActorEnter(edu.monash.fit2099.engine.actors.Actor)">canActorEnter</a></span>&#8203;(<a href="../actors/Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#canActorEnter(edu.monash.fit2099.engine.actors.Actor)">canActorEnter</a></span>&#8203;(<a href="../actors/Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor)</code></th>
 <td class="col-last">
 <div class="block">Returns true if an Actor can enter this location.</div>
 </td>
@@ -176,7 +176,7 @@ int&nbsp;y)</code></th>
 </td>
 </tr>
 <tr class="row-color" id="i5">
-<td class="col-first"><code><a href="../actors/Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a></code></td>
+<td class="col-first"><code><a href="../actors/Actor.html" title="class in engine.actors">Actor</a></code></td>
 <th class="col-second" scope="row"><code><span class="member-name-link"><a href="#getActor()">getActor</a></span>()</code></th>
 <td class="col-last">
 <div class="block">Accessor to retrieve the Actor at this location.</div>
@@ -190,29 +190,29 @@ int&nbsp;y)</code></th>
 </td>
 </tr>
 <tr class="row-color" id="i7">
-<td class="col-first"><code>java.util.List&lt;<a href="Exit.html" title="class in edu.monash.fit2099.engine.positions">Exit</a>&gt;</code></td>
+<td class="col-first"><code>java.util.List&lt;<a href="Exit.html" title="class in engine.positions">Exit</a>&gt;</code></td>
 <th class="col-second" scope="row"><code><span class="member-name-link"><a href="#getExits()">getExits</a></span>()</code></th>
 <td class="col-last">
 <div class="block">Returns an unmodifiable list of exits.</div>
 </td>
 </tr>
 <tr class="alt-color" id="i8">
-<td class="col-first"><code><a href="Ground.html" title="class in edu.monash.fit2099.engine.positions">Ground</a></code></td>
+<td class="col-first"><code><a href="Ground.html" title="class in engine.positions">Ground</a></code></td>
 <th class="col-second" scope="row"><code><span class="member-name-link"><a href="#getGround()">getGround</a></span>()</code></th>
 <td class="col-last">
 <div class="block">Accessor for the ground at this location.</div>
 </td>
 </tr>
 <tr class="row-color" id="i9">
-<td class="col-first"><code>java.util.List&lt;<a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a>&gt;</code></td>
+<td class="col-first"><code>java.util.List&lt;<a href="../items/Item.html" title="class in engine.items">Item</a>&gt;</code></td>
 <th class="col-second" scope="row"><code><span class="member-name-link"><a href="#getItems()">getItems</a></span>()</code></th>
 <td class="col-last">
 <div class="block">Returns a list of items at this location.</div>
 </td>
 </tr>
 <tr class="alt-color" id="i10">
-<td class="col-first"><code><a href="../actions/MoveActorAction.html" title="class in edu.monash.fit2099.engine.actions">MoveActorAction</a></code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#getMoveAction(edu.monash.fit2099.engine.actors.Actor,java.lang.String,java.lang.String)">getMoveAction</a></span>&#8203;(<a href="../actors/Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor,
+<td class="col-first"><code><a href="../actions/MoveActorAction.html" title="class in engine.actions">MoveActorAction</a></code></td>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#getMoveAction(edu.monash.fit2099.engine.actors.Actor,java.lang.String,java.lang.String)">getMoveAction</a></span>&#8203;(<a href="../actors/Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor,
 java.lang.String&nbsp;direction,
 java.lang.String&nbsp;hotKey)</code></th>
 <td class="col-last">
@@ -227,7 +227,7 @@ java.lang.String&nbsp;hotKey)</code></th>
 </td>
 </tr>
 <tr class="alt-color" id="i12">
-<td class="col-first"><code><a href="GameMap.html" title="class in edu.monash.fit2099.engine.positions">GameMap</a></code></td>
+<td class="col-first"><code><a href="GameMap.html" title="class in engine.positions">GameMap</a></code></td>
 <th class="col-second" scope="row"><code><span class="member-name-link"><a href="#map()">map</a></span>()</code></th>
 <td class="col-last">
 <div class="block">Accessor for the Location's map.</div>
@@ -235,21 +235,21 @@ java.lang.String&nbsp;hotKey)</code></th>
 </tr>
 <tr class="row-color" id="i13">
 <td class="col-first"><code>void</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#removeExit(edu.monash.fit2099.engine.positions.Exit)">removeExit</a></span>&#8203;(<a href="Exit.html" title="class in edu.monash.fit2099.engine.positions">Exit</a>&nbsp;exit)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#removeExit(edu.monash.fit2099.engine.positions.Exit)">removeExit</a></span>&#8203;(<a href="Exit.html" title="class in engine.positions">Exit</a>&nbsp;exit)</code></th>
 <td class="col-last">
 <div class="block">Remove an exit from this Location.</div>
 </td>
 </tr>
 <tr class="alt-color" id="i14">
 <td class="col-first"><code>void</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#removeItem(edu.monash.fit2099.engine.items.Item)">removeItem</a></span>&#8203;(<a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a>&nbsp;item)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#removeItem(edu.monash.fit2099.engine.items.Item)">removeItem</a></span>&#8203;(<a href="../items/Item.html" title="class in engine.items">Item</a>&nbsp;item)</code></th>
 <td class="col-last">
 <div class="block">Remove an item from this location, if it is here.</div>
 </td>
 </tr>
 <tr class="row-color" id="i15">
 <td class="col-first"><code>void</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#setGround(edu.monash.fit2099.engine.positions.Ground)">setGround</a></span>&#8203;(<a href="Ground.html" title="class in edu.monash.fit2099.engine.positions">Ground</a>&nbsp;ground)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#setGround(edu.monash.fit2099.engine.positions.Ground)">setGround</a></span>&#8203;(<a href="Ground.html" title="class in engine.positions">Ground</a>&nbsp;ground)</code></th>
 <td class="col-last">
 <div class="block">Set the Ground type at the given Location</div>
 </td>
@@ -301,7 +301,7 @@ java.lang.String&nbsp;hotKey)</code></th>
 <li>
 <section class="detail" id="&lt;init&gt;(edu.monash.fit2099.engine.positions.GameMap,int,int)">
 <h3>Location</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="member-name">Location</span>&#8203;(<span class="parameters"><a href="GameMap.html" title="class in edu.monash.fit2099.engine.positions">GameMap</a>&nbsp;map,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="member-name">Location</span>&#8203;(<span class="parameters"><a href="GameMap.html" title="class in engine.positions">GameMap</a>&nbsp;map,
 int&nbsp;x,
 int&nbsp;y)</span></div>
 <div class="block">Constructor.
@@ -326,7 +326,7 @@ int&nbsp;y)</span></div>
 <li>
 <section class="detail" id="map()">
 <h3>map</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="GameMap.html" title="class in edu.monash.fit2099.engine.positions">GameMap</a></span>&nbsp;<span class="member-name">map</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="GameMap.html" title="class in engine.positions">GameMap</a></span>&nbsp;<span class="member-name">map</span>()</div>
 <div class="block">Accessor for the Location's map.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -359,7 +359,7 @@ int&nbsp;y)</span></div>
 <li>
 <section class="detail" id="getItems()">
 <h3>getItems</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.util.List&lt;<a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a>&gt;</span>&nbsp;<span class="member-name">getItems</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.util.List&lt;<a href="../items/Item.html" title="class in engine.items">Item</a>&gt;</span>&nbsp;<span class="member-name">getItems</span>()</div>
 <div class="block">Returns a list of items at this location.
 
  This list uses Collections.unmodifiableList() to prevent privacy leaks.</div>
@@ -372,7 +372,7 @@ int&nbsp;y)</span></div>
 <li>
 <section class="detail" id="addItem(edu.monash.fit2099.engine.items.Item)">
 <h3>addItem</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">addItem</span>&#8203;(<span class="parameters"><a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a>&nbsp;item)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">addItem</span>&#8203;(<span class="parameters"><a href="../items/Item.html" title="class in engine.items">Item</a>&nbsp;item)</span></div>
 <div class="block">Add an item to this location.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -383,7 +383,7 @@ int&nbsp;y)</span></div>
 <li>
 <section class="detail" id="removeItem(edu.monash.fit2099.engine.items.Item)">
 <h3>removeItem</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">removeItem</span>&#8203;(<span class="parameters"><a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a>&nbsp;item)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">removeItem</span>&#8203;(<span class="parameters"><a href="../items/Item.html" title="class in engine.items">Item</a>&nbsp;item)</span></div>
 <div class="block">Remove an item from this location, if it is here.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -394,7 +394,7 @@ int&nbsp;y)</span></div>
 <li>
 <section class="detail" id="getGround()">
 <h3>getGround</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Ground.html" title="class in edu.monash.fit2099.engine.positions">Ground</a></span>&nbsp;<span class="member-name">getGround</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Ground.html" title="class in engine.positions">Ground</a></span>&nbsp;<span class="member-name">getGround</span>()</div>
 <div class="block">Accessor for the ground at this location.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -405,7 +405,7 @@ int&nbsp;y)</span></div>
 <li>
 <section class="detail" id="setGround(edu.monash.fit2099.engine.positions.Ground)">
 <h3>setGround</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">setGround</span>&#8203;(<span class="parameters"><a href="Ground.html" title="class in edu.monash.fit2099.engine.positions">Ground</a>&nbsp;ground)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">setGround</span>&#8203;(<span class="parameters"><a href="Ground.html" title="class in engine.positions">Ground</a>&nbsp;ground)</span></div>
 <div class="block">Set the Ground type at the given Location</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -435,7 +435,7 @@ int&nbsp;y)</span></div>
 <li>
 <section class="detail" id="getActor()">
 <h3>getActor</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../actors/Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a></span>&nbsp;<span class="member-name">getActor</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../actors/Actor.html" title="class in engine.actors">Actor</a></span>&nbsp;<span class="member-name">getActor</span>()</div>
 <div class="block">Accessor to retrieve the Actor at this location.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -446,7 +446,7 @@ int&nbsp;y)</span></div>
 <li>
 <section class="detail" id="addActor(edu.monash.fit2099.engine.actors.Actor)">
 <h3>addActor</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">addActor</span>&#8203;(<span class="parameters"><a href="../actors/Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">addActor</span>&#8203;(<span class="parameters"><a href="../actors/Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor)</span></div>
 <div class="block">Add an Actor to the Location.
  This is really only here for consistency for the Location API.</div>
 <dl class="notes">
@@ -458,7 +458,7 @@ int&nbsp;y)</span></div>
 <li>
 <section class="detail" id="getMoveAction(edu.monash.fit2099.engine.actors.Actor,java.lang.String,java.lang.String)">
 <h3>getMoveAction</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../actions/MoveActorAction.html" title="class in edu.monash.fit2099.engine.actions">MoveActorAction</a></span>&nbsp;<span class="member-name">getMoveAction</span>&#8203;(<span class="parameters"><a href="../actors/Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../actions/MoveActorAction.html" title="class in engine.actions">MoveActorAction</a></span>&nbsp;<span class="member-name">getMoveAction</span>&#8203;(<span class="parameters"><a href="../actors/Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor,
 java.lang.String&nbsp;direction,
 java.lang.String&nbsp;hotKey)</span></div>
 <div class="block">Returns a MoveActorAction that will move actor to location if the terrain type allows.</div>
@@ -475,7 +475,7 @@ java.lang.String&nbsp;hotKey)</span></div>
 <li>
 <section class="detail" id="canActorEnter(edu.monash.fit2099.engine.actors.Actor)">
 <h3>canActorEnter</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="member-name">canActorEnter</span>&#8203;(<span class="parameters"><a href="../actors/Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="member-name">canActorEnter</span>&#8203;(<span class="parameters"><a href="../actors/Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor)</span></div>
 <div class="block">Returns true if an Actor can enter this location.
 
  Actors can enter a location if the terrain is passable and there isn't an Actor there already.
@@ -498,7 +498,7 @@ java.lang.String&nbsp;hotKey)</span></div>
  If there is no Actor and no item, then the ground symbol is drawn.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../displays/Printable.html#getDisplayChar()">getDisplayChar</a></code>&nbsp;in interface&nbsp;<code><a href="../displays/Printable.html" title="interface in edu.monash.fit2099.engine.displays">Printable</a></code></dd>
+<dd><code><a href="../displays/Printable.html#getDisplayChar()">getDisplayChar</a></code>&nbsp;in interface&nbsp;<code><a href="../displays/Printable.html" title="interface in engine.displays">Printable</a></code></dd>
 <dt>Returns:</dt>
 <dd>the symbol to draw for this location</dd>
 </dl>
@@ -520,7 +520,7 @@ java.lang.String&nbsp;hotKey)</span></div>
 <li>
 <section class="detail" id="getExits()">
 <h3>getExits</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.util.List&lt;<a href="Exit.html" title="class in edu.monash.fit2099.engine.positions">Exit</a>&gt;</span>&nbsp;<span class="member-name">getExits</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.util.List&lt;<a href="Exit.html" title="class in engine.positions">Exit</a>&gt;</span>&nbsp;<span class="member-name">getExits</span>()</div>
 <div class="block">Returns an unmodifiable list of exits.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -531,7 +531,7 @@ java.lang.String&nbsp;hotKey)</span></div>
 <li>
 <section class="detail" id="addExit(edu.monash.fit2099.engine.positions.Exit)">
 <h3>addExit</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">addExit</span>&#8203;(<span class="parameters"><a href="Exit.html" title="class in edu.monash.fit2099.engine.positions">Exit</a>&nbsp;exit)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">addExit</span>&#8203;(<span class="parameters"><a href="Exit.html" title="class in engine.positions">Exit</a>&nbsp;exit)</span></div>
 <div class="block">Add an exit to this Location.
 
  This method is used in GameMap to initialize the Location's exits.</div>
@@ -544,7 +544,7 @@ java.lang.String&nbsp;hotKey)</span></div>
 <li>
 <section class="detail" id="removeExit(edu.monash.fit2099.engine.positions.Exit)">
 <h3>removeExit</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">removeExit</span>&#8203;(<span class="parameters"><a href="Exit.html" title="class in edu.monash.fit2099.engine.positions">Exit</a>&nbsp;exit)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">removeExit</span>&#8203;(<span class="parameters"><a href="Exit.html" title="class in engine.positions">Exit</a>&nbsp;exit)</span></div>
 <div class="block">Remove an exit from this Location.
 
  This method is used in GameMap to initialize the Location's exits.</div>

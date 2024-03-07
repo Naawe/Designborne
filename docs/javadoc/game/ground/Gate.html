@@ -77,8 +77,8 @@ loadScripts(document, 'script');</script>
 <h1 title="Class Gate" class="title">Class Gate</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
-<div class="inheritance">edu.monash.fit2099.engine.GameEntity
-<div class="inheritance">edu.monash.fit2099.engine.positions.Ground
+<div class="inheritance">engine.GameEntity
+<div class="inheritance">engine.positions.Ground
 <div class="inheritance">game.ground.Gate</div>
 </div>
 </div>
@@ -86,11 +86,11 @@ loadScripts(document, 'script');</script>
 <section class="description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code>edu.monash.fit2099.engine.displays.Printable</code></dd>
+<dd><code>engine.displays.Printable</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="type-name-label">Gate</span>
-extends edu.monash.fit2099.engine.positions.Ground</pre>
+extends engine.positions.Ground</pre>
 <div class="block">A class for the Gate which transports the actor between levels if they have the key to unlock
   Created by:</div>
 <dl class="notes">
@@ -109,7 +109,7 @@ extends edu.monash.fit2099.engine.positions.Ground</pre>
 <section class="field-summary" id="field.summary">
 <h2>Field Summary</h2>
 <div class="inherited-list">
-<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;engine.GameEntity</h3>
 <code>capabilitySet</code></div>
 </section>
 </li>
@@ -156,15 +156,15 @@ extends edu.monash.fit2099.engine.positions.Ground</pre>
 <tbody>
 <tr class="alt-color" id="i0">
 <td class="col-first"><code>void</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#addAllowableAction(edu.monash.fit2099.engine.actions.Action)">addAllowableAction</a></span>&#8203;(edu.monash.fit2099.engine.actions.Action&nbsp;action)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#addAllowableAction(edu.monash.fit2099.engine.actions.Action)">addAllowableAction</a></span>&#8203;(engine.actions.Action&nbsp;action)</code></th>
 <td class="col-last">
 <div class="block">allows you to add a movement action</div>
 </td>
 </tr>
 <tr class="row-color" id="i1">
-<td class="col-first"><code>edu.monash.fit2099.engine.actions.ActionList</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location,java.lang.String)">allowableActions</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
-edu.monash.fit2099.engine.positions.Location&nbsp;location,
+<td class="col-first"><code>engine.actions.ActionList</code></td>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location,java.lang.String)">allowableActions</a></span>&#8203;(engine.actors.Actor&nbsp;actor,
+engine.positions.Location&nbsp;location,
 java.lang.String&nbsp;direction)</code></th>
 <td class="col-last">
 <div class="block">checks to see if the actor has a key with the unlock ability if so it returns a UnlockGate action
@@ -173,7 +173,7 @@ java.lang.String&nbsp;direction)</code></th>
 </tr>
 <tr class="alt-color" id="i2">
 <td class="col-first"><code>boolean</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#canActorEnter(edu.monash.fit2099.engine.actors.Actor)">canActorEnter</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;actor)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#canActorEnter(edu.monash.fit2099.engine.actors.Actor)">canActorEnter</a></span>&#8203;(engine.actors.Actor&nbsp;actor)</code></th>
 <td class="col-last">
 <div class="block">Whether an actor can enter</div>
 </td>
@@ -190,10 +190,10 @@ java.lang.String&nbsp;direction)</code></th>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.positions.Ground">Methods inherited from class&nbsp;edu.monash.fit2099.engine.positions.Ground</h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.positions.Ground">Methods inherited from class&nbsp;engine.positions.Ground</h3>
 <code>blocksThrownObjects, getDisplayChar, setDisplayChar, tick</code></div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;engine.GameEntity</h3>
 <code>addCapability, capabilitiesList, findCapabilitiesByType, hasCapability, removeCapability</code></div>
 <div class="inherited-list">
 <h3 id="methods.inherited.from.class.java.lang.Object">Methods inherited from class&nbsp;java.lang.Object</h3>
@@ -227,11 +227,11 @@ java.lang.String&nbsp;direction)</code></th>
 <li>
 <section class="detail" id="canActorEnter(edu.monash.fit2099.engine.actors.Actor)">
 <h3>canActorEnter</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="member-name">canActorEnter</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;actor)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="member-name">canActorEnter</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;actor)</span></div>
 <div class="block">Whether an actor can enter</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code>canActorEnter</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.positions.Ground</code></dd>
+<dd><code>canActorEnter</code>&nbsp;in class&nbsp;<code>engine.positions.Ground</code></dd>
 <dt>Parameters:</dt>
 <dd><code>actor</code> - the Actor to check</dd>
 <dt>Returns:</dt>
@@ -242,7 +242,7 @@ java.lang.String&nbsp;direction)</code></th>
 <li>
 <section class="detail" id="addAllowableAction(edu.monash.fit2099.engine.actions.Action)">
 <h3>addAllowableAction</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">addAllowableAction</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actions.Action&nbsp;action)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">addAllowableAction</span>&#8203;(<span class="parameters">engine.actions.Action&nbsp;action)</span></div>
 <div class="block">allows you to add a movement action</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -260,14 +260,14 @@ java.lang.String&nbsp;direction)</code></th>
 <li>
 <section class="detail" id="allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location,java.lang.String)">
 <h3>allowableActions</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">edu.monash.fit2099.engine.actions.ActionList</span>&nbsp;<span class="member-name">allowableActions</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
-edu.monash.fit2099.engine.positions.Location&nbsp;location,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">engine.actions.ActionList</span>&nbsp;<span class="member-name">allowableActions</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;actor,
+engine.positions.Location&nbsp;location,
 java.lang.String&nbsp;direction)</span></div>
 <div class="block">checks to see if the actor has a key with the unlock ability if so it returns a UnlockGate action
  if the gate is Unlocked then it returns the MovePlayerAction.</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code>allowableActions</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.positions.Ground</code></dd>
+<dd><code>allowableActions</code>&nbsp;in class&nbsp;<code>engine.positions.Ground</code></dd>
 <dt>Parameters:</dt>
 <dd><code>actor</code> - the Actor acting</dd>
 <dd><code>location</code> - the current Location</dd>

@@ -77,8 +77,8 @@ loadScripts(document, 'script');</script>
 <h1 title="Class Puddle" class="title">Class Puddle</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
-<div class="inheritance">edu.monash.fit2099.engine.GameEntity
-<div class="inheritance">edu.monash.fit2099.engine.positions.Ground
+<div class="inheritance">engine.GameEntity
+<div class="inheritance">engine.positions.Ground
 <div class="inheritance">game.ground.Puddle</div>
 </div>
 </div>
@@ -86,11 +86,11 @@ loadScripts(document, 'script');</script>
 <section class="description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code>edu.monash.fit2099.engine.displays.Printable</code>, <code><a href="../items/Consumable.html" title="interface in game.items">Consumable</a></code></dd>
+<dd><code>engine.displays.Printable</code>, <code><a href="../items/Consumable.html" title="interface in game.items">Consumable</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="type-name-label">Puddle</span>
-extends edu.monash.fit2099.engine.positions.Ground
+extends engine.positions.Ground
 implements <a href="../items/Consumable.html" title="interface in game.items">Consumable</a></pre>
 <div class="block">A class that represents a puddle.
  Created by:</div>
@@ -110,7 +110,7 @@ implements <a href="../items/Consumable.html" title="interface in game.items">Co
 <section class="field-summary" id="field.summary">
 <h2>Field Summary</h2>
 <div class="inherited-list">
-<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;engine.GameEntity</h3>
 <code>capabilitySet</code></div>
 </section>
 </li>
@@ -156,9 +156,9 @@ implements <a href="../items/Consumable.html" title="interface in game.items">Co
 </thead>
 <tbody>
 <tr class="alt-color" id="i0">
-<td class="col-first"><code>edu.monash.fit2099.engine.actions.ActionList</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location,java.lang.String)">allowableActions</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
-edu.monash.fit2099.engine.positions.Location&nbsp;location,
+<td class="col-first"><code>engine.actions.ActionList</code></td>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location,java.lang.String)">allowableActions</a></span>&#8203;(engine.actors.Actor&nbsp;actor,
+engine.positions.Location&nbsp;location,
 java.lang.String&nbsp;direction)</code></th>
 <td class="col-last">
 <div class="block">returns the ConsumableAction when the player is standing exactly on the puddle</div>
@@ -166,7 +166,7 @@ java.lang.String&nbsp;direction)</code></th>
 </tr>
 <tr class="row-color" id="i1">
 <td class="col-first"><code>void</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#consume(edu.monash.fit2099.engine.actors.Actor)">consume</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;actor)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#consume(edu.monash.fit2099.engine.actors.Actor)">consume</a></span>&#8203;(engine.actors.Actor&nbsp;actor)</code></th>
 <td class="col-last">
 <div class="block">the consume action used to heal and refresh the player</div>
 </td>
@@ -176,10 +176,10 @@ java.lang.String&nbsp;direction)</code></th>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.positions.Ground">Methods inherited from class&nbsp;edu.monash.fit2099.engine.positions.Ground</h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.positions.Ground">Methods inherited from class&nbsp;engine.positions.Ground</h3>
 <code>blocksThrownObjects, canActorEnter, getDisplayChar, setDisplayChar, tick</code></div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;engine.GameEntity</h3>
 <code>addCapability, capabilitiesList, findCapabilitiesByType, hasCapability, removeCapability</code></div>
 <div class="inherited-list">
 <h3 id="methods.inherited.from.class.java.lang.Object">Methods inherited from class&nbsp;java.lang.Object</h3>
@@ -213,7 +213,7 @@ java.lang.String&nbsp;direction)</code></th>
 <li>
 <section class="detail" id="consume(edu.monash.fit2099.engine.actors.Actor)">
 <h3>consume</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">consume</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;actor)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="member-name">consume</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;actor)</span></div>
 <div class="block">the consume action used to heal and refresh the player</div>
 <dl class="notes">
 <dt>Specified by:</dt>
@@ -226,13 +226,13 @@ java.lang.String&nbsp;direction)</code></th>
 <li>
 <section class="detail" id="allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location,java.lang.String)">
 <h3>allowableActions</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">edu.monash.fit2099.engine.actions.ActionList</span>&nbsp;<span class="member-name">allowableActions</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;actor,
-edu.monash.fit2099.engine.positions.Location&nbsp;location,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">engine.actions.ActionList</span>&nbsp;<span class="member-name">allowableActions</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;actor,
+engine.positions.Location&nbsp;location,
 java.lang.String&nbsp;direction)</span></div>
 <div class="block">returns the ConsumableAction when the player is standing exactly on the puddle</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code>allowableActions</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.positions.Ground</code></dd>
+<dd><code>allowableActions</code>&nbsp;in class&nbsp;<code>engine.positions.Ground</code></dd>
 <dt>Parameters:</dt>
 <dd><code>actor</code> - the Actor acting</dd>
 <dd><code>location</code> - the current Location</dd>

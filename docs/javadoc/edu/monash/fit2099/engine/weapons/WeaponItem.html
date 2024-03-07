@@ -6,7 +6,7 @@
 <title>WeaponItem</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="dc.created" content="2023-10-06">
-<meta name="description" content="declaration: package: edu.monash.fit2099.engine.weapons, class: WeaponItem">
+<meta name="description" content="declaration: package: engine.weapons, class: WeaponItem">
 <meta name="generator" content="javadoc/ClassWriterImpl">
 <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
 <link rel="stylesheet" type="text/css" href="../../../../../script-dir/jquery-ui.min.css" title="Style">
@@ -73,20 +73,20 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">edu.monash.fit2099.engine.weapons</a></div>
+<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">engine.weapons</a></div>
 <h1 title="Class WeaponItem" class="title">Class WeaponItem</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
-<div class="inheritance"><a href="../GameEntity.html" title="class in edu.monash.fit2099.engine">edu.monash.fit2099.engine.GameEntity</a>
-<div class="inheritance"><a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items">edu.monash.fit2099.engine.items.Item</a>
-<div class="inheritance">edu.monash.fit2099.engine.weapons.WeaponItem</div>
+<div class="inheritance"><a href="../GameEntity.html" title="class in engine">engine.GameEntity</a>
+<div class="inheritance"><a href="../items/Item.html" title="class in engine.items">engine.items.Item</a>
+<div class="inheritance">engine.weapons.WeaponItem</div>
 </div>
 </div>
 </div>
 <section class="description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../displays/Printable.html" title="interface in edu.monash.fit2099.engine.displays">Printable</a></code>, <code><a href="Weapon.html" title="interface in edu.monash.fit2099.engine.weapons">Weapon</a></code></dd>
+<dd><code><a href="../displays/Printable.html" title="interface in engine.displays">Printable</a></code>, <code><a href="Weapon.html" title="interface in engine.weapons">Weapon</a></code></dd>
 </dl>
 <dl class="notes">
 <dt>Direct Known Subclasses:</dt>
@@ -94,8 +94,8 @@ loadScripts(document, 'script');</script>
 </dl>
 <hr>
 <pre>public abstract class <span class="type-name-label">WeaponItem</span>
-extends <a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a>
-implements <a href="Weapon.html" title="interface in edu.monash.fit2099.engine.weapons">Weapon</a></pre>
+extends <a href="../items/Item.html" title="class in engine.items">Item</a>
+implements <a href="Weapon.html" title="interface in engine.weapons">Weapon</a></pre>
 <div class="block">Class representing items that can be used as a weapon.</div>
 </section>
 <section class="summary">
@@ -105,10 +105,10 @@ implements <a href="Weapon.html" title="interface in edu.monash.fit2099.engine.w
 <section class="field-summary" id="field.summary">
 <h2>Field Summary</h2>
 <div class="inherited-list">
-<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.items.Item">Fields inherited from class&nbsp;edu.monash.fit2099.engine.items.<a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a></h3>
+<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.items.Item">Fields inherited from class&nbsp;engine.items.<a href="../items/Item.html" title="class in engine.items">Item</a></h3>
 <code><a href="../items/Item.html#portable">portable</a></code></div>
 <div class="inherited-list">
-<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;edu.monash.fit2099.engine.<a href="../GameEntity.html" title="class in edu.monash.fit2099.engine">GameEntity</a></h3>
+<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;engine.<a href="../GameEntity.html" title="class in engine">GameEntity</a></h3>
 <code><a href="../GameEntity.html#capabilitySet">capabilitySet</a></code></div>
 </section>
 </li>
@@ -212,10 +212,10 @@ int&nbsp;hitRate)</code></th>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.items.Item">Methods inherited from class&nbsp;edu.monash.fit2099.engine.items.<a href="../items/Item.html" title="class in edu.monash.fit2099.engine.items">Item</a></h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.items.Item">Methods inherited from class&nbsp;engine.items.<a href="../items/Item.html" title="class in engine.items">Item</a></h3>
 <code><a href="../items/Item.html#allowableActions(edu.monash.fit2099.engine.actors.Actor)">allowableActions</a>, <a href="../items/Item.html#allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location)">allowableActions</a>, <a href="../items/Item.html#allowableActions(edu.monash.fit2099.engine.positions.Location)">allowableActions</a>, <a href="../items/Item.html#getDisplayChar()">getDisplayChar</a>, <a href="../items/Item.html#getDropAction(edu.monash.fit2099.engine.actors.Actor)">getDropAction</a>, <a href="../items/Item.html#getPickUpAction(edu.monash.fit2099.engine.actors.Actor)">getPickUpAction</a>, <a href="../items/Item.html#setDisplayChar(char)">setDisplayChar</a>, <a href="../items/Item.html#tick(edu.monash.fit2099.engine.positions.Location)">tick</a>, <a href="../items/Item.html#tick(edu.monash.fit2099.engine.positions.Location,edu.monash.fit2099.engine.actors.Actor)">tick</a>, <a href="../items/Item.html#togglePortability()">togglePortability</a>, <a href="../items/Item.html#toString()">toString</a></code></div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;edu.monash.fit2099.engine.<a href="../GameEntity.html" title="class in edu.monash.fit2099.engine">GameEntity</a></h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;engine.<a href="../GameEntity.html" title="class in engine">GameEntity</a></h3>
 <code><a href="../GameEntity.html#addCapability(java.lang.Enum)">addCapability</a>, <a href="../GameEntity.html#capabilitiesList()">capabilitiesList</a>, <a href="../GameEntity.html#findCapabilitiesByType(java.lang.Class)">findCapabilitiesByType</a>, <a href="../GameEntity.html#hasCapability(java.lang.Enum)">hasCapability</a>, <a href="../GameEntity.html#removeCapability(java.lang.Enum)">removeCapability</a></code></div>
 <div class="inherited-list">
 <h3 id="methods.inherited.from.class.java.lang.Object">Methods inherited from class&nbsp;java.lang.Object</h3>
@@ -313,7 +313,7 @@ int&nbsp;hitRate)</span></div>
 <div class="block">Accessor for damage done by this weapon.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="Weapon.html#damage()">damage</a></code>&nbsp;in interface&nbsp;<code><a href="Weapon.html" title="interface in edu.monash.fit2099.engine.weapons">Weapon</a></code></dd>
+<dd><code><a href="Weapon.html#damage()">damage</a></code>&nbsp;in interface&nbsp;<code><a href="Weapon.html" title="interface in engine.weapons">Weapon</a></code></dd>
 <dt>Returns:</dt>
 <dd>the damage</dd>
 </dl>
@@ -327,7 +327,7 @@ int&nbsp;hitRate)</span></div>
  in the UI.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="Weapon.html#verb()">verb</a></code>&nbsp;in interface&nbsp;<code><a href="Weapon.html" title="interface in edu.monash.fit2099.engine.weapons">Weapon</a></code></dd>
+<dd><code><a href="Weapon.html#verb()">verb</a></code>&nbsp;in interface&nbsp;<code><a href="Weapon.html" title="interface in engine.weapons">Weapon</a></code></dd>
 <dt>Returns:</dt>
 <dd>a third-person present tense verb, e.g. "hits", "zaps"</dd>
 </dl>
@@ -340,7 +340,7 @@ int&nbsp;hitRate)</span></div>
 <div class="block">Returns the chance to hit the target in integer. Use it altogether with nextInt() method.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="Weapon.html#chanceToHit()">chanceToHit</a></code>&nbsp;in interface&nbsp;<code><a href="Weapon.html" title="interface in edu.monash.fit2099.engine.weapons">Weapon</a></code></dd>
+<dd><code><a href="Weapon.html#chanceToHit()">chanceToHit</a></code>&nbsp;in interface&nbsp;<code><a href="Weapon.html" title="interface in engine.weapons">Weapon</a></code></dd>
 <dt>Returns:</dt>
 <dd>Integer, such as</dd>
 </dl>

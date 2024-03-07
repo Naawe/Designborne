@@ -72,8 +72,8 @@ loadScripts(document, 'script');</script>
 <h1 title="Class Player" class="title">Class Player</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
-<div class="inheritance">edu.monash.fit2099.engine.GameEntity
-<div class="inheritance">edu.monash.fit2099.engine.actors.Actor
+<div class="inheritance">engine.GameEntity
+<div class="inheritance">engine.actors.Actor
 <div class="inheritance">game.actors.Player</div>
 </div>
 </div>
@@ -81,11 +81,11 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code>edu.monash.fit2099.engine.displays.Printable</code></dd>
+<dd><code>engine.displays.Printable</code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Player</span>
-<span class="extends-implements">extends edu.monash.fit2099.engine.actors.Actor</span></div>
+<span class="extends-implements">extends engine.actors.Actor</span></div>
 <div class="block">Class representing the Player.
  Created by:</div>
 <dl class="notes">
@@ -104,10 +104,10 @@ loadScripts(document, 'script');</script>
 <section class="field-summary" id="field-summary">
 <h2>Field Summary</h2>
 <div class="inherited-list">
-<h3 id="fields-inherited-from-class-edu.monash.fit2099.engine.actors.Actor">Fields inherited from class&nbsp;edu.monash.fit2099.engine.actors.Actor</h3>
+<h3 id="fields-inherited-from-class-edu.monash.fit2099.engine.actors.Actor">Fields inherited from class&nbsp;engine.actors.Actor</h3>
 <code>name</code></div>
 <div class="inherited-list">
-<h3 id="fields-inherited-from-class-edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="fields-inherited-from-class-edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;engine.GameEntity</h3>
 <code>capabilitySet</code></div>
 </section>
 </li>
@@ -122,7 +122,7 @@ loadScripts(document, 'script');</script>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.String,char,int,edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">Player</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  char&nbsp;displayChar,
  int&nbsp;hitPoints,
- edu.monash.fit2099.engine.positions.GameMap&nbsp;birthMap)</code></div>
+ engine.positions.GameMap&nbsp;birthMap)</code></div>
 <div class="col-last even-row-color">
 <div class="block">Constructor.</div>
 </div>
@@ -141,11 +141,11 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#dropRune(edu.monash.fit2099.engine.positions.Location)" class="member-name-link">dropRune</a><wbr>(edu.monash.fit2099.engine.positions.Location&nbsp;location)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#dropRune(edu.monash.fit2099.engine.positions.Location)" class="member-name-link">dropRune</a><wbr>(engine.positions.Location&nbsp;location)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">drop runes to ground</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>edu.monash.fit2099.engine.weapons.IntrinsicWeapon</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>engine.weapons.IntrinsicWeapon</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getIntrinsicWeapon()" class="member-name-link">getIntrinsicWeapon</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">sets the actors intrinsic weapon</div>
@@ -155,16 +155,16 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">returns a string of actor name</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>edu.monash.fit2099.engine.actions.Action</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#playTurn(edu.monash.fit2099.engine.actions.ActionList,edu.monash.fit2099.engine.actions.Action,edu.monash.fit2099.engine.positions.GameMap,edu.monash.fit2099.engine.displays.Display)" class="member-name-link">playTurn</a><wbr>(edu.monash.fit2099.engine.actions.ActionList&nbsp;actions,
- edu.monash.fit2099.engine.actions.Action&nbsp;lastAction,
- edu.monash.fit2099.engine.positions.GameMap&nbsp;map,
- edu.monash.fit2099.engine.displays.Display&nbsp;display)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>engine.actions.Action</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#playTurn(edu.monash.fit2099.engine.actions.ActionList,edu.monash.fit2099.engine.actions.Action,edu.monash.fit2099.engine.positions.GameMap,edu.monash.fit2099.engine.displays.Display)" class="member-name-link">playTurn</a><wbr>(engine.actions.ActionList&nbsp;actions,
+ engine.actions.Action&nbsp;lastAction,
+ engine.positions.GameMap&nbsp;map,
+ engine.displays.Display&nbsp;display)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">simply prints current stats and then returns a menu with all possible actions in it</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#printPlayerStatus(edu.monash.fit2099.engine.displays.Display)" class="member-name-link">printPlayerStatus</a><wbr>(edu.monash.fit2099.engine.displays.Display&nbsp;display)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#printPlayerStatus(edu.monash.fit2099.engine.displays.Display)" class="member-name-link">printPlayerStatus</a><wbr>(engine.displays.Display&nbsp;display)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">print out player status</div>
 </div>
@@ -174,13 +174,13 @@ loadScripts(document, 'script');</script>
 <div class="block">reset player max attributes and move player to birth point</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#resetPlayer(edu.monash.fit2099.engine.displays.Display,edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">resetPlayer</a><wbr>(edu.monash.fit2099.engine.displays.Display&nbsp;display,
- edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#resetPlayer(edu.monash.fit2099.engine.displays.Display,edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">resetPlayer</a><wbr>(engine.displays.Display&nbsp;display,
+ engine.positions.GameMap&nbsp;map)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">reset player once it's dead by calling reset max attributes method, drop runes and printing out relavent console message.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#respawn(edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">respawn</a><wbr>(edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#respawn(edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">respawn</a><wbr>(engine.positions.GameMap&nbsp;map)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">the method that collects all operations that are needed to perform the respawn operation</div>
 </div>
@@ -190,7 +190,7 @@ loadScripts(document, 'script');</script>
 <div class="block">returns the string for the player</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#unconscious(edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">unconscious</a><wbr>(edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#unconscious(edu.monash.fit2099.engine.positions.GameMap)" class="member-name-link">unconscious</a><wbr>(engine.positions.GameMap&nbsp;map)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Method that can be executed when the actor is unconscious due to natural causes or accident
  For example, the actor is unconscious due to them falling into a deep well.</div>
@@ -199,10 +199,10 @@ loadScripts(document, 'script');</script>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-edu.monash.fit2099.engine.actors.Actor">Methods inherited from class&nbsp;edu.monash.fit2099.engine.actors.Actor</h3>
+<h3 id="methods-inherited-from-class-edu.monash.fit2099.engine.actors.Actor">Methods inherited from class&nbsp;engine.actors.Actor</h3>
 <code>addAttribute, addBalance, addItemToInventory, allowableActions, deductBalance, getAttribute, getAttributeMaximum, getBalance, getDisplayChar, getItemInventory, hasAttribute, hasCapability, heal, hurt, increaseDamageMultiplier, isConscious, modifyAttribute, modifyAttributeMaximum, removeItemFromInventory, setDisplayChar, unconscious, updateDamageMultiplier</code></div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="methods-inherited-from-class-edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;engine.GameEntity</h3>
 <code>addCapability, capabilitiesList, findCapabilitiesByType, removeCapability</code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
@@ -224,7 +224,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Player</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  char&nbsp;displayChar,
  int&nbsp;hitPoints,
- edu.monash.fit2099.engine.positions.GameMap&nbsp;birthMap)</span></div>
+ engine.positions.GameMap&nbsp;birthMap)</span></div>
 <div class="block">Constructor.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -245,14 +245,14 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="playTurn(edu.monash.fit2099.engine.actions.ActionList,edu.monash.fit2099.engine.actions.Action,edu.monash.fit2099.engine.positions.GameMap,edu.monash.fit2099.engine.displays.Display)">
 <h3>playTurn</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">edu.monash.fit2099.engine.actions.Action</span>&nbsp;<span class="element-name">playTurn</span><wbr><span class="parameters">(edu.monash.fit2099.engine.actions.ActionList&nbsp;actions,
- edu.monash.fit2099.engine.actions.Action&nbsp;lastAction,
- edu.monash.fit2099.engine.positions.GameMap&nbsp;map,
- edu.monash.fit2099.engine.displays.Display&nbsp;display)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">engine.actions.Action</span>&nbsp;<span class="element-name">playTurn</span><wbr><span class="parameters">(engine.actions.ActionList&nbsp;actions,
+ engine.actions.Action&nbsp;lastAction,
+ engine.positions.GameMap&nbsp;map,
+ engine.displays.Display&nbsp;display)</span></div>
 <div class="block">simply prints current stats and then returns a menu with all possible actions in it</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code>playTurn</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.actors.Actor</code></dd>
+<dd><code>playTurn</code>&nbsp;in class&nbsp;<code>engine.actors.Actor</code></dd>
 <dt>Parameters:</dt>
 <dd><code>actions</code> - collection of possible Actions for this Actor</dd>
 <dd><code>lastAction</code> - The Action this Actor took last turn. Can do interesting things in conjunction with Action.getNextAction()</dd>
@@ -277,11 +277,11 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="getIntrinsicWeapon()">
 <h3>getIntrinsicWeapon</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">edu.monash.fit2099.engine.weapons.IntrinsicWeapon</span>&nbsp;<span class="element-name">getIntrinsicWeapon</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">engine.weapons.IntrinsicWeapon</span>&nbsp;<span class="element-name">getIntrinsicWeapon</span>()</div>
 <div class="block">sets the actors intrinsic weapon</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code>getIntrinsicWeapon</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.actors.Actor</code></dd>
+<dd><code>getIntrinsicWeapon</code>&nbsp;in class&nbsp;<code>engine.actors.Actor</code></dd>
 <dt>Returns:</dt>
 <dd>returns the players intrinsic weapon</dd>
 </dl>
@@ -294,7 +294,7 @@ loadScripts(document, 'script');</script>
 <div class="block">returns the string for the player</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code>toString</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.actors.Actor</code></dd>
+<dd><code>toString</code>&nbsp;in class&nbsp;<code>engine.actors.Actor</code></dd>
 <dt>Returns:</dt>
 <dd>returns a string describing the player</dd>
 </dl>
@@ -303,8 +303,8 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="resetPlayer(edu.monash.fit2099.engine.displays.Display,edu.monash.fit2099.engine.positions.GameMap)">
 <h3>resetPlayer</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">resetPlayer</span><wbr><span class="parameters">(edu.monash.fit2099.engine.displays.Display&nbsp;display,
- edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">resetPlayer</span><wbr><span class="parameters">(engine.displays.Display&nbsp;display,
+ engine.positions.GameMap&nbsp;map)</span></div>
 <div class="block">reset player once it's dead by calling reset max attributes method, drop runes and printing out relavent console message.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -316,7 +316,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="dropRune(edu.monash.fit2099.engine.positions.Location)">
 <h3>dropRune</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">dropRune</span><wbr><span class="parameters">(edu.monash.fit2099.engine.positions.Location&nbsp;location)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">dropRune</span><wbr><span class="parameters">(engine.positions.Location&nbsp;location)</span></div>
 <div class="block">drop runes to ground</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -334,7 +334,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="printPlayerStatus(edu.monash.fit2099.engine.displays.Display)">
 <h3>printPlayerStatus</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">printPlayerStatus</span><wbr><span class="parameters">(edu.monash.fit2099.engine.displays.Display&nbsp;display)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">printPlayerStatus</span><wbr><span class="parameters">(engine.displays.Display&nbsp;display)</span></div>
 <div class="block">print out player status</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -345,13 +345,13 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="unconscious(edu.monash.fit2099.engine.positions.GameMap)">
 <h3>unconscious</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">unconscious</span><wbr><span class="parameters">(edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</span></div>
-<div class="block"><span class="descfrm-type-label">Description copied from class:&nbsp;<code>edu.monash.fit2099.engine.actors.Actor</code></span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">unconscious</span><wbr><span class="parameters">(engine.positions.GameMap&nbsp;map)</span></div>
+<div class="block"><span class="descfrm-type-label">Description copied from class:&nbsp;<code>engine.actors.Actor</code></span></div>
 <div class="block">Method that can be executed when the actor is unconscious due to natural causes or accident
  For example, the actor is unconscious due to them falling into a deep well.</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code>unconscious</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.actors.Actor</code></dd>
+<dd><code>unconscious</code>&nbsp;in class&nbsp;<code>engine.actors.Actor</code></dd>
 <dt>Parameters:</dt>
 <dd><code>map</code> - the map where player fell unconscious</dd>
 <dt>Returns:</dt>
@@ -362,7 +362,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="respawn(edu.monash.fit2099.engine.positions.GameMap)">
 <h3>respawn</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">respawn</span><wbr><span class="parameters">(edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">respawn</span><wbr><span class="parameters">(engine.positions.GameMap&nbsp;map)</span></div>
 <div class="block">the method that collects all operations that are needed to perform the respawn operation</div>
 <dl class="notes">
 <dt>Parameters:</dt>

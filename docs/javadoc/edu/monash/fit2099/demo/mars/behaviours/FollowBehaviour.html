@@ -82,12 +82,12 @@ loadScripts(document, 'script');</script>
 <section class="description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../engine/actors/Behaviour.html" title="interface in edu.monash.fit2099.engine.actors">Behaviour</a></code></dd>
+<dd><code><a href="../../../engine/actors/Behaviour.html" title="interface in engine.actors">Behaviour</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="type-name-label">FollowBehaviour</span>
 extends java.lang.Object
-implements <a href="../../../engine/actors/Behaviour.html" title="interface in edu.monash.fit2099.engine.actors">Behaviour</a></pre>
+implements <a href="../../../engine/actors/Behaviour.html" title="interface in engine.actors">Behaviour</a></pre>
 <div class="block">A class that figures out a MoveAction that will move the actor one step 
  closer to a target Actor.</div>
 <dl class="notes">
@@ -115,7 +115,7 @@ implements <a href="../../../engine/actors/Behaviour.html" title="interface in e
 </thead>
 <tbody>
 <tr class="alt-color">
-<th class="col-constructor-name" scope="row"><code><span class="member-name-link"><a href="#%3Cinit%3E(edu.monash.fit2099.engine.actors.Actor)">FollowBehaviour</a></span>&#8203;(<a href="../../../engine/actors/Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;subject)</code></th>
+<th class="col-constructor-name" scope="row"><code><span class="member-name-link"><a href="#%3Cinit%3E(edu.monash.fit2099.engine.actors.Actor)">FollowBehaviour</a></span>&#8203;(<a href="../../../engine/actors/Actor.html" title="class in engine.actors">Actor</a>&nbsp;subject)</code></th>
 <td class="col-last">
 <div class="block">Constructor.</div>
 </td>
@@ -142,9 +142,9 @@ implements <a href="../../../engine/actors/Behaviour.html" title="interface in e
 </thead>
 <tbody>
 <tr class="alt-color" id="i0">
-<td class="col-first"><code><a href="../../../engine/actions/Action.html" title="class in edu.monash.fit2099.engine.actions">Action</a></code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#getAction(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">getAction</a></span>&#8203;(<a href="../../../engine/actors/Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor,
-<a href="../../../engine/positions/GameMap.html" title="class in edu.monash.fit2099.engine.positions">GameMap</a>&nbsp;map)</code></th>
+<td class="col-first"><code><a href="../../../engine/actions/Action.html" title="class in engine.actions">Action</a></code></td>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#getAction(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">getAction</a></span>&#8203;(<a href="../../../engine/actors/Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor,
+<a href="../../../engine/positions/GameMap.html" title="class in engine.positions">GameMap</a>&nbsp;map)</code></th>
 <td class="col-last">
 <div class="block">A factory for creating actions.</div>
 </td>
@@ -170,7 +170,7 @@ implements <a href="../../../engine/actors/Behaviour.html" title="interface in e
 <li>
 <section class="detail" id="&lt;init&gt;(edu.monash.fit2099.engine.actors.Actor)">
 <h3>FollowBehaviour</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="member-name">FollowBehaviour</span>&#8203;(<span class="parameters"><a href="../../../engine/actors/Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;subject)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="member-name">FollowBehaviour</span>&#8203;(<span class="parameters"><a href="../../../engine/actors/Actor.html" title="class in engine.actors">Actor</a>&nbsp;subject)</span></div>
 <div class="block">Constructor.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -189,8 +189,8 @@ implements <a href="../../../engine/actors/Behaviour.html" title="interface in e
 <li>
 <section class="detail" id="getAction(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">
 <h3>getAction</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../engine/actions/Action.html" title="class in edu.monash.fit2099.engine.actions">Action</a></span>&nbsp;<span class="member-name">getAction</span>&#8203;(<span class="parameters"><a href="../../../engine/actors/Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor,
-<a href="../../../engine/positions/GameMap.html" title="class in edu.monash.fit2099.engine.positions">GameMap</a>&nbsp;map)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../engine/actions/Action.html" title="class in engine.actions">Action</a></span>&nbsp;<span class="member-name">getAction</span>&#8203;(<span class="parameters"><a href="../../../engine/actors/Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor,
+<a href="../../../engine/positions/GameMap.html" title="class in engine.positions">GameMap</a>&nbsp;map)</span></div>
 <div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="../../../engine/actors/Behaviour.html#getAction(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">Behaviour</a></code></span></div>
 <div class="block">A factory for creating actions. Chaining these together can result in an actor performing more complex tasks.
 
@@ -208,7 +208,7 @@ implements <a href="../../../engine/actors/Behaviour.html" title="interface in e
  reused if (e.g.) more than one kind of Actor needs to be able to seek, follow, or hide.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../../../engine/actors/Behaviour.html#getAction(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">getAction</a></code>&nbsp;in interface&nbsp;<code><a href="../../../engine/actors/Behaviour.html" title="interface in edu.monash.fit2099.engine.actors">Behaviour</a></code></dd>
+<dd><code><a href="../../../engine/actors/Behaviour.html#getAction(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.GameMap)">getAction</a></code>&nbsp;in interface&nbsp;<code><a href="../../../engine/actors/Behaviour.html" title="interface in engine.actors">Behaviour</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>actor</code> - the Actor acting</dd>
 <dd><code>map</code> - the GameMap containing the Actor</dd>

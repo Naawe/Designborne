@@ -72,8 +72,8 @@ loadScripts(document, 'script');</script>
 <h1 title="Class Rune" class="title">Class Rune</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
-<div class="inheritance">edu.monash.fit2099.engine.GameEntity
-<div class="inheritance">edu.monash.fit2099.engine.items.Item
+<div class="inheritance">engine.GameEntity
+<div class="inheritance">engine.items.Item
 <div class="inheritance">game.items.Rune</div>
 </div>
 </div>
@@ -81,11 +81,11 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code>edu.monash.fit2099.engine.displays.Printable</code>, <code>game.items.Consumable</code>, <code><a href="../notification/DeathSubcriber.html" title="interface in game.notification">DeathSubcriber</a></code></dd>
+<dd><code>engine.displays.Printable</code>, <code>game.items.Consumable</code>, <code><a href="../notification/DeathSubcriber.html" title="interface in game.notification">DeathSubcriber</a></code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Rune</span>
-<span class="extends-implements">extends edu.monash.fit2099.engine.items.Item
+<span class="extends-implements">extends engine.items.Item
 implements game.items.Consumable, <a href="../notification/DeathSubcriber.html" title="interface in game.notification">DeathSubcriber</a></span></div>
 <div class="block">Runes are dropped by enemies and used to trade with
  Created by:</div>
@@ -106,10 +106,10 @@ implements game.items.Consumable, <a href="../notification/DeathSubcriber.html" 
 <section class="field-summary" id="field-summary">
 <h2>Field Summary</h2>
 <div class="inherited-list">
-<h3 id="fields-inherited-from-class-edu.monash.fit2099.engine.items.Item">Fields inherited from class&nbsp;edu.monash.fit2099.engine.items.Item</h3>
+<h3 id="fields-inherited-from-class-edu.monash.fit2099.engine.items.Item">Fields inherited from class&nbsp;engine.items.Item</h3>
 <code>portable</code></div>
 <div class="inherited-list">
-<h3 id="fields-inherited-from-class-edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="fields-inherited-from-class-edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;engine.GameEntity</h3>
 <code>capabilitySet</code></div>
 </section>
 </li>
@@ -139,13 +139,13 @@ implements game.items.Consumable, <a href="../notification/DeathSubcriber.html" 
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>edu.monash.fit2099.engine.actions.ActionList</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor)" class="member-name-link">allowableActions</a><wbr>(edu.monash.fit2099.engine.actors.Actor&nbsp;owner)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>engine.actions.ActionList</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor)" class="member-name-link">allowableActions</a><wbr>(engine.actors.Actor&nbsp;owner)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">returns the list of allowable actions when the Runes are being held by the player</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#consume(edu.monash.fit2099.engine.actors.Actor)" class="member-name-link">consume</a><wbr>(edu.monash.fit2099.engine.actors.Actor&nbsp;actor)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#consume(edu.monash.fit2099.engine.actors.Actor)" class="member-name-link">consume</a><wbr>(engine.actors.Actor&nbsp;actor)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Consume interface used to add the runes to wallet</div>
 </div>
@@ -160,7 +160,7 @@ implements game.items.Consumable, <a href="../notification/DeathSubcriber.html" 
 <div class="block">prompt operations on rune once death of the actor it subscribes to happens.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#tick(edu.monash.fit2099.engine.positions.Location)" class="member-name-link">tick</a><wbr>(edu.monash.fit2099.engine.positions.Location&nbsp;currentLocation)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#tick(edu.monash.fit2099.engine.positions.Location)" class="member-name-link">tick</a><wbr>(engine.positions.Location&nbsp;currentLocation)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Called once per turn, so that Locations can experience the passage time.</div>
 </div>
@@ -168,10 +168,10 @@ implements game.items.Consumable, <a href="../notification/DeathSubcriber.html" 
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-edu.monash.fit2099.engine.items.Item">Methods inherited from class&nbsp;edu.monash.fit2099.engine.items.Item</h3>
+<h3 id="methods-inherited-from-class-edu.monash.fit2099.engine.items.Item">Methods inherited from class&nbsp;engine.items.Item</h3>
 <code>allowableActions, allowableActions, getDisplayChar, getDropAction, getPickUpAction, setDisplayChar, tick, togglePortability, toString</code></div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="methods-inherited-from-class-edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;engine.GameEntity</h3>
 <code>addCapability, capabilitiesList, findCapabilitiesByType, hasCapability, removeCapability</code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
@@ -209,11 +209,11 @@ implements game.items.Consumable, <a href="../notification/DeathSubcriber.html" 
 <li>
 <section class="detail" id="allowableActions(edu.monash.fit2099.engine.actors.Actor)">
 <h3>allowableActions</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">edu.monash.fit2099.engine.actions.ActionList</span>&nbsp;<span class="element-name">allowableActions</span><wbr><span class="parameters">(edu.monash.fit2099.engine.actors.Actor&nbsp;owner)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">engine.actions.ActionList</span>&nbsp;<span class="element-name">allowableActions</span><wbr><span class="parameters">(engine.actors.Actor&nbsp;owner)</span></div>
 <div class="block">returns the list of allowable actions when the Runes are being held by the player</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code>allowableActions</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.items.Item</code></dd>
+<dd><code>allowableActions</code>&nbsp;in class&nbsp;<code>engine.items.Item</code></dd>
 <dt>Parameters:</dt>
 <dd><code>owner</code> - the actor that owns the item</dd>
 <dt>Returns:</dt>
@@ -224,7 +224,7 @@ implements game.items.Consumable, <a href="../notification/DeathSubcriber.html" 
 <li>
 <section class="detail" id="consume(edu.monash.fit2099.engine.actors.Actor)">
 <h3>consume</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">consume</span><wbr><span class="parameters">(edu.monash.fit2099.engine.actors.Actor&nbsp;actor)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">consume</span><wbr><span class="parameters">(engine.actors.Actor&nbsp;actor)</span></div>
 <div class="block">Consume interface used to add the runes to wallet</div>
 <dl class="notes">
 <dt>Specified by:</dt>
@@ -259,12 +259,12 @@ implements game.items.Consumable, <a href="../notification/DeathSubcriber.html" 
 <li>
 <section class="detail" id="tick(edu.monash.fit2099.engine.positions.Location)">
 <h3>tick</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">tick</span><wbr><span class="parameters">(edu.monash.fit2099.engine.positions.Location&nbsp;currentLocation)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">tick</span><wbr><span class="parameters">(engine.positions.Location&nbsp;currentLocation)</span></div>
 <div class="block">Called once per turn, so that Locations can experience the passage time. If that's
  important to them.</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code>tick</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.items.Item</code></dd>
+<dd><code>tick</code>&nbsp;in class&nbsp;<code>engine.items.Item</code></dd>
 <dt>Parameters:</dt>
 <dd><code>currentLocation</code> - The location of the ground on which we lie.</dd>
 </dl>

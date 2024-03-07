@@ -77,8 +77,8 @@ loadScripts(document, 'script');</script>
 <h1 title="Class LockedDoor" class="title">Class LockedDoor</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
-<div class="inheritance"><a href="../../../engine/GameEntity.html" title="class in edu.monash.fit2099.engine">edu.monash.fit2099.engine.GameEntity</a>
-<div class="inheritance"><a href="../../../engine/positions/Ground.html" title="class in edu.monash.fit2099.engine.positions">edu.monash.fit2099.engine.positions.Ground</a>
+<div class="inheritance"><a href="../../../engine/GameEntity.html" title="class in engine">engine.GameEntity</a>
+<div class="inheritance"><a href="../../../engine/positions/Ground.html" title="class in engine.positions">engine.positions.Ground</a>
 <div class="inheritance">edu.monash.fit2099.demo.mars.grounds.LockedDoor</div>
 </div>
 </div>
@@ -86,11 +86,11 @@ loadScripts(document, 'script');</script>
 <section class="description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../engine/displays/Printable.html" title="interface in edu.monash.fit2099.engine.displays">Printable</a></code></dd>
+<dd><code><a href="../../../engine/displays/Printable.html" title="interface in engine.displays">Printable</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="type-name-label">LockedDoor</span>
-extends <a href="../../../engine/positions/Ground.html" title="class in edu.monash.fit2099.engine.positions">Ground</a></pre>
+extends <a href="../../../engine/positions/Ground.html" title="class in engine.positions">Ground</a></pre>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -99,7 +99,7 @@ extends <a href="../../../engine/positions/Ground.html" title="class in edu.mona
 <section class="field-summary" id="field.summary">
 <h2>Field Summary</h2>
 <div class="inherited-list">
-<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;edu.monash.fit2099.engine.<a href="../../../engine/GameEntity.html" title="class in edu.monash.fit2099.engine">GameEntity</a></h3>
+<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;engine.<a href="../../../engine/GameEntity.html" title="class in engine">GameEntity</a></h3>
 <code><a href="../../../engine/GameEntity.html#capabilitySet">capabilitySet</a></code></div>
 </section>
 </li>
@@ -143,9 +143,9 @@ extends <a href="../../../engine/positions/Ground.html" title="class in edu.mona
 </thead>
 <tbody>
 <tr class="alt-color" id="i0">
-<td class="col-first"><code><a href="../../../engine/actions/ActionList.html" title="class in edu.monash.fit2099.engine.actions">ActionList</a></code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location,java.lang.String)">allowableActions</a></span>&#8203;(<a href="../../../engine/actors/Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor,
-<a href="../../../engine/positions/Location.html" title="class in edu.monash.fit2099.engine.positions">Location</a>&nbsp;location,
+<td class="col-first"><code><a href="../../../engine/actions/ActionList.html" title="class in engine.actions">ActionList</a></code></td>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location,java.lang.String)">allowableActions</a></span>&#8203;(<a href="../../../engine/actors/Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor,
+<a href="../../../engine/positions/Location.html" title="class in engine.positions">Location</a>&nbsp;location,
 java.lang.String&nbsp;direction)</code></th>
 <td class="col-last">
 <div class="block">Returns an empty Action list.</div>
@@ -160,7 +160,7 @@ java.lang.String&nbsp;direction)</code></th>
 </tr>
 <tr class="alt-color" id="i2">
 <td class="col-first"><code>boolean</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#canActorEnter(edu.monash.fit2099.engine.actors.Actor)">canActorEnter</a></span>&#8203;(<a href="../../../engine/actors/Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#canActorEnter(edu.monash.fit2099.engine.actors.Actor)">canActorEnter</a></span>&#8203;(<a href="../../../engine/actors/Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor)</code></th>
 <td class="col-last">
 <div class="block">Override this to implement impassable terrain, or terrain that is only passable if conditions are met.</div>
 </td>
@@ -170,10 +170,10 @@ java.lang.String&nbsp;direction)</code></th>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.positions.Ground">Methods inherited from class&nbsp;edu.monash.fit2099.engine.positions.<a href="../../../engine/positions/Ground.html" title="class in edu.monash.fit2099.engine.positions">Ground</a></h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.positions.Ground">Methods inherited from class&nbsp;engine.positions.<a href="../../../engine/positions/Ground.html" title="class in engine.positions">Ground</a></h3>
 <code><a href="../../../engine/positions/Ground.html#getDisplayChar()">getDisplayChar</a>, <a href="../../../engine/positions/Ground.html#setDisplayChar(char)">setDisplayChar</a>, <a href="../../../engine/positions/Ground.html#tick(edu.monash.fit2099.engine.positions.Location)">tick</a></code></div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;edu.monash.fit2099.engine.<a href="../../../engine/GameEntity.html" title="class in edu.monash.fit2099.engine">GameEntity</a></h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;engine.<a href="../../../engine/GameEntity.html" title="class in engine">GameEntity</a></h3>
 <code><a href="../../../engine/GameEntity.html#addCapability(java.lang.Enum)">addCapability</a>, <a href="../../../engine/GameEntity.html#capabilitiesList()">capabilitiesList</a>, <a href="../../../engine/GameEntity.html#findCapabilitiesByType(java.lang.Class)">findCapabilitiesByType</a>, <a href="../../../engine/GameEntity.html#hasCapability(java.lang.Enum)">hasCapability</a>, <a href="../../../engine/GameEntity.html#removeCapability(java.lang.Enum)">removeCapability</a></code></div>
 <div class="inherited-list">
 <h3 id="methods.inherited.from.class.java.lang.Object">Methods inherited from class&nbsp;java.lang.Object</h3>
@@ -206,12 +206,12 @@ java.lang.String&nbsp;direction)</code></th>
 <li>
 <section class="detail" id="canActorEnter(edu.monash.fit2099.engine.actors.Actor)">
 <h3>canActorEnter</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="member-name">canActorEnter</span>&#8203;(<span class="parameters"><a href="../../../engine/actors/Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="member-name">canActorEnter</span>&#8203;(<span class="parameters"><a href="../../../engine/actors/Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor)</span></div>
 <div class="block"><span class="descfrm-type-label">Description copied from class:&nbsp;<code><a href="../../../engine/positions/Ground.html#canActorEnter(edu.monash.fit2099.engine.actors.Actor)">Ground</a></code></span></div>
 <div class="block">Override this to implement impassable terrain, or terrain that is only passable if conditions are met.</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code><a href="../../../engine/positions/Ground.html#canActorEnter(edu.monash.fit2099.engine.actors.Actor)">canActorEnter</a></code>&nbsp;in class&nbsp;<code><a href="../../../engine/positions/Ground.html" title="class in edu.monash.fit2099.engine.positions">Ground</a></code></dd>
+<dd><code><a href="../../../engine/positions/Ground.html#canActorEnter(edu.monash.fit2099.engine.actors.Actor)">canActorEnter</a></code>&nbsp;in class&nbsp;<code><a href="../../../engine/positions/Ground.html" title="class in engine.positions">Ground</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>actor</code> - the Actor to check</dd>
 <dt>Returns:</dt>
@@ -222,14 +222,14 @@ java.lang.String&nbsp;direction)</code></th>
 <li>
 <section class="detail" id="allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location,java.lang.String)">
 <h3>allowableActions</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../engine/actions/ActionList.html" title="class in edu.monash.fit2099.engine.actions">ActionList</a></span>&nbsp;<span class="member-name">allowableActions</span>&#8203;(<span class="parameters"><a href="../../../engine/actors/Actor.html" title="class in edu.monash.fit2099.engine.actors">Actor</a>&nbsp;actor,
-<a href="../../../engine/positions/Location.html" title="class in edu.monash.fit2099.engine.positions">Location</a>&nbsp;location,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../engine/actions/ActionList.html" title="class in engine.actions">ActionList</a></span>&nbsp;<span class="member-name">allowableActions</span>&#8203;(<span class="parameters"><a href="../../../engine/actors/Actor.html" title="class in engine.actors">Actor</a>&nbsp;actor,
+<a href="../../../engine/positions/Location.html" title="class in engine.positions">Location</a>&nbsp;location,
 java.lang.String&nbsp;direction)</span></div>
 <div class="block"><span class="descfrm-type-label">Description copied from class:&nbsp;<code><a href="../../../engine/positions/Ground.html#allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location,java.lang.String)">Ground</a></code></span></div>
 <div class="block">Returns an empty Action list.</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code><a href="../../../engine/positions/Ground.html#allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location,java.lang.String)">allowableActions</a></code>&nbsp;in class&nbsp;<code><a href="../../../engine/positions/Ground.html" title="class in edu.monash.fit2099.engine.positions">Ground</a></code></dd>
+<dd><code><a href="../../../engine/positions/Ground.html#allowableActions(edu.monash.fit2099.engine.actors.Actor,edu.monash.fit2099.engine.positions.Location,java.lang.String)">allowableActions</a></code>&nbsp;in class&nbsp;<code><a href="../../../engine/positions/Ground.html" title="class in engine.positions">Ground</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>actor</code> - the Actor acting</dd>
 <dd><code>location</code> - the current Location</dd>
@@ -247,7 +247,7 @@ java.lang.String&nbsp;direction)</span></div>
 <div class="block">Override this to implement terrain that blocks thrown objects but not movement, or vice versa</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code><a href="../../../engine/positions/Ground.html#blocksThrownObjects()">blocksThrownObjects</a></code>&nbsp;in class&nbsp;<code><a href="../../../engine/positions/Ground.html" title="class in edu.monash.fit2099.engine.positions">Ground</a></code></dd>
+<dd><code><a href="../../../engine/positions/Ground.html#blocksThrownObjects()">blocksThrownObjects</a></code>&nbsp;in class&nbsp;<code><a href="../../../engine/positions/Ground.html" title="class in engine.positions">Ground</a></code></dd>
 <dt>Returns:</dt>
 <dd>true</dd>
 </dl>

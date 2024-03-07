@@ -77,8 +77,8 @@ loadScripts(document, 'script');</script>
 <h1 title="Class Traveller" class="title">Class Traveller</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
-<div class="inheritance">edu.monash.fit2099.engine.GameEntity
-<div class="inheritance">edu.monash.fit2099.engine.actors.Actor
+<div class="inheritance">engine.GameEntity
+<div class="inheritance">engine.actors.Actor
 <div class="inheritance"><a href="NPC.html" title="class in game.actors">game.actors.NPC</a>
 <div class="inheritance"><a href="Trader.html" title="class in game.actors">game.actors.Trader</a>
 <div class="inheritance">game.actors.Traveller</div>
@@ -90,7 +90,7 @@ loadScripts(document, 'script');</script>
 <section class="description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code>edu.monash.fit2099.engine.displays.Printable</code>, <code><a href="../actions/Conversation.html" title="interface in game.actions">Conversation</a></code></dd>
+<dd><code>engine.displays.Printable</code>, <code><a href="../actions/Conversation.html" title="interface in game.actions">Conversation</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="type-name-label">Traveller</span>
@@ -116,10 +116,10 @@ implements <a href="../actions/Conversation.html" title="interface in game.actio
 <section class="field-summary" id="field.summary">
 <h2>Field Summary</h2>
 <div class="inherited-list">
-<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.actors.Actor">Fields inherited from class&nbsp;edu.monash.fit2099.engine.actors.Actor</h3>
+<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.actors.Actor">Fields inherited from class&nbsp;engine.actors.Actor</h3>
 <code>name</code></div>
 <div class="inherited-list">
-<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="fields.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Fields inherited from class&nbsp;engine.GameEntity</h3>
 <code>capabilitySet</code></div>
 </section>
 </li>
@@ -165,17 +165,17 @@ implements <a href="../actions/Conversation.html" title="interface in game.actio
 </thead>
 <tbody>
 <tr class="alt-color" id="i0">
-<td class="col-first"><code>edu.monash.fit2099.engine.actions.ActionList</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor,java.lang.String,edu.monash.fit2099.engine.positions.GameMap)">allowableActions</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;otherActor,
+<td class="col-first"><code>engine.actions.ActionList</code></td>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#allowableActions(edu.monash.fit2099.engine.actors.Actor,java.lang.String,edu.monash.fit2099.engine.positions.GameMap)">allowableActions</a></span>&#8203;(engine.actors.Actor&nbsp;otherActor,
 java.lang.String&nbsp;direction,
-edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></th>
+engine.positions.GameMap&nbsp;map)</code></th>
 <td class="col-last">
 <div class="block">A list of buyable actions that an actor can choose to buy from the Traveller</div>
 </td>
 </tr>
 <tr class="row-color" id="i1">
 <td class="col-first"><code>java.lang.String</code></td>
-<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#conversation(edu.monash.fit2099.engine.actors.Actor)">conversation</a></span>&#8203;(edu.monash.fit2099.engine.actors.Actor&nbsp;actor)</code></th>
+<th class="col-second" scope="row"><code><span class="member-name-link"><a href="#conversation(edu.monash.fit2099.engine.actors.Actor)">conversation</a></span>&#8203;(engine.actors.Actor&nbsp;actor)</code></th>
 <td class="col-last">
 <div class="block">This method allows isolated traveller to have unique monologue options</div>
 </td>
@@ -195,10 +195,10 @@ edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></th>
 <h3 id="methods.inherited.from.class.game.actors.NPC">Methods inherited from class&nbsp;game.actors.<a href="NPC.html" title="class in game.actors">NPC</a></h3>
 <code><a href="NPC.html#playTurn(edu.monash.fit2099.engine.actions.ActionList,edu.monash.fit2099.engine.actions.Action,edu.monash.fit2099.engine.positions.GameMap,edu.monash.fit2099.engine.displays.Display)">playTurn</a></code></div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.actors.Actor">Methods inherited from class&nbsp;edu.monash.fit2099.engine.actors.Actor</h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.actors.Actor">Methods inherited from class&nbsp;engine.actors.Actor</h3>
 <code>addAttribute, addBalance, addItemToInventory, deductBalance, getAttribute, getAttributeMaximum, getBalance, getDisplayChar, getIntrinsicWeapon, getItemInventory, hasAttribute, hasCapability, heal, hurt, increaseDamageMultiplier, isConscious, modifyAttribute, modifyAttributeMaximum, removeItemFromInventory, setDisplayChar, toString, unconscious, unconscious, updateDamageMultiplier</code></div>
 <div class="inherited-list">
-<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;edu.monash.fit2099.engine.GameEntity</h3>
+<h3 id="methods.inherited.from.class.edu.monash.fit2099.engine.GameEntity">Methods inherited from class&nbsp;engine.GameEntity</h3>
 <code>addCapability, capabilitiesList, findCapabilitiesByType, removeCapability</code></div>
 <div class="inherited-list">
 <h3 id="methods.inherited.from.class.java.lang.Object">Methods inherited from class&nbsp;java.lang.Object</h3>
@@ -232,13 +232,13 @@ edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</code></th>
 <li>
 <section class="detail" id="allowableActions(edu.monash.fit2099.engine.actors.Actor,java.lang.String,edu.monash.fit2099.engine.positions.GameMap)">
 <h3>allowableActions</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">edu.monash.fit2099.engine.actions.ActionList</span>&nbsp;<span class="member-name">allowableActions</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;otherActor,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">engine.actions.ActionList</span>&nbsp;<span class="member-name">allowableActions</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;otherActor,
 java.lang.String&nbsp;direction,
-edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</span></div>
+engine.positions.GameMap&nbsp;map)</span></div>
 <div class="block">A list of buyable actions that an actor can choose to buy from the Traveller</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code>allowableActions</code>&nbsp;in class&nbsp;<code>edu.monash.fit2099.engine.actors.Actor</code></dd>
+<dd><code>allowableActions</code>&nbsp;in class&nbsp;<code>engine.actors.Actor</code></dd>
 <dt>Parameters:</dt>
 <dd><code>otherActor</code> - the Actor that might be performing attack</dd>
 <dd><code>direction</code> - String representing the direction of the other Actor</dd>
@@ -262,11 +262,11 @@ edu.monash.fit2099.engine.positions.GameMap&nbsp;map)</span></div>
 <li>
 <section class="detail" id="conversation(edu.monash.fit2099.engine.actors.Actor)">
 <h3>conversation</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">conversation</span>&#8203;(<span class="parameters">edu.monash.fit2099.engine.actors.Actor&nbsp;actor)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.lang.String</span>&nbsp;<span class="member-name">conversation</span>&#8203;(<span class="parameters">engine.actors.Actor&nbsp;actor)</span></div>
 <div class="block">This method allows isolated traveller to have unique monologue options</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../actions/Conversation.html#conversation(edu.monash.fit2099.engine.actors.Actor)">conversation</a></code>&nbsp;in interface&nbsp;<code><a href="../actions/Conversation.html" title="interface in game.actions">Conversation</a></code></dd>
+<dd><code><a href="../actions/Conversation.html#conversation(engine.actors.Actor)">conversation</a></code>&nbsp;in interface&nbsp;<code><a href="../actions/Conversation.html" title="interface in game.actions">Conversation</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>actor</code> - The actor that the traveller can have a conversation with</dd>
 <dt>Returns:</dt>
